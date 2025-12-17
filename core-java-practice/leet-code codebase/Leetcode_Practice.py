@@ -1,6 +1,6 @@
-Leetcode - 19. Remove Nth Node From End of List
+# Leetcode - 19. Remove Nth Node From End of List
 
-Solution :-
+# Solution :-
 
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
@@ -39,7 +39,7 @@ class Solution:
         return dummy.next
 
 
-Leetcode - 92. Reverse Linked List II
+# Leetcode - 92. Reverse Linked List II
 
 # Definition for singly-linked list.
 # class ListNode:
@@ -84,7 +84,7 @@ class Solution:
         return dummy.next #  since we have this dummy to be pointing at the head of the linked list ..
 
 
-Leetcode - 50. Pow(x,n)
+# Leetcode - 50. Pow(x,n)
 
 class Solution:
     def myPow(self, x: float, n: int) -> float:
@@ -114,7 +114,7 @@ class Solution:
         
         return 1 / ans 
 
-Leetcode - 191. Number of 1 Bits
+# Leetcode - 191. Number of 1 Bits
 
 class Solution:
     def hammingWeight(self, n: int) -> int:
@@ -126,7 +126,7 @@ class Solution:
             n >>= 1 # doing right shift to now focus on the next bit of the given no.
         return count
 
-Leetcode - 268. Missing Number
+# Leetcode - 268. Missing Number
 
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
@@ -146,3 +146,4 @@ class Solution:
         # 3). - Commutative & Associative(Order doesn’t matter) a^b^c = c^a^b
 
         # Thus if we XOR all numbers from 1 to n with nums , every number that appears in both will be cancelled . Except that did not appear in nums and thus that will be the missing num.
+
