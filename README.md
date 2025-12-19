@@ -122,6 +122,20 @@ Welcome to the documentation of my training program workflow! This record will b
     - Reference types: string, class, interface, delegate, object, arrays.
     - Nullable types: `int?`, nullable reference types annotations (C# 8+).
 
+12. **Access Modifiers in C#**
+    - We covered the six access modifiers and implemented a simple demonstration program.
+    - The six modifiers:
+      1. `public` — accessible from anywhere.
+      2. `private` — accessible only within the containing type.
+      3. `protected` — accessible within the containing type and types derived from it.
+      4. `internal` — accessible anywhere within the same assembly.
+      5. `protected internal` — accessible from derived types OR anywhere in the same assembly.
+      6. `private protected` — accessible from derived types, but only within the same assembly (introduced in C# 7.2).
+    - Notes:
+      - `internal` is useful for hiding implementation from other assemblies.
+      - `protected internal` and `private protected` give finer-grained control for library authors.
+      - `private protected` differs from `protected internal`: `private protected` requires both derived and same-assembly conditions; `protected internal` requires only one.
+
 #### Key Learnings:
 - Understood application architecture choices (monolithic vs layered) and when to use each.
 - Clarified the .NET compilation pipeline and terminology (IL / CIL / MSIL, CLR).
