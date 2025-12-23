@@ -145,6 +145,90 @@ Welcome to the documentation of my training program workflow! This record will b
 
 ---
 
+### Date: December 20, 2025 | Day: 3
+
+#### Activities & Review:
+
+1. **Consolidation of Fundamentals**
+* Dedicated session to reinforce concepts from Day 1 and Day 2.
+* Fine-tuned the practical implementation of **C# Operators** (Arithmetic, Relational, Logical, and Bitwise).
+* Reviewed and debugged the initial 10 basic programs to ensure coding standards and best practices (proper naming conventions and indentation) were met.
+
+
+2. **Resource Review & Theory**
+* Conducted an in-depth study of technical documentation and PDFs provided via **Google Classroom**.
+* Focused on the internal workings of the **Common Language Runtime (CLR)**.
+* Studied memory management: **Value Types** (stored on the Stack) vs. **Reference Types** (stored on the Heap).
+
+
+
+---
+
+### Date: December 22, 2025 | Day: 4
+
+#### Topics Covered:
+
+1. **Control Flow Statements**
+* Explored how to control program execution paths using:
+* **Selection Statements:** `if`, `else if`, `else`, and `switch` cases.
+* **Iteration Statements (Loops):** `for`, `while`, and `do-while`.
+* **Jump Statements:** `break`, `continue`, and `return`.
+
+
+
+
+
+#### Practical Tasks:
+
+* Worked on a comprehensive set of **30+ Logic Building Problems** categorized into three difficulty tiers:
+* **Level 1 (Basic):** Simple conditional checks (Even/Odd, Leap Year, Voting eligibility).
+* **Level 2 (Intermediate):** Loops and series (Fibonacci, Prime numbers, Factorials, Palindrome checks).
+* **Level 3 (Advanced):** Complex nested logic, and mathematical sequences.
+
+
+
+**Key Learnings:**
+
+* Improved algorithmic thinking by breaking down complex problems into smaller, logical steps.
+* Gained clarity on when to use `switch` statements over nested `if-else` for cleaner, more readable code.
+
+---
+
+### Date: December 23, 2025 | Day: 5
+
+#### Topics Covered:
+
+1. **Arrays in C#**
+* Learned to store multiple values of the same type in a single indexed variable.
+* Covered **Single-dimensional arrays**: declaration, initialization, and memory representation.
+* Practiced iteration techniques: Using `foreach` for read-only access vs. `for` loops for index-based manipulation.
+
+
+2. **Scenario-Based Problem Solving**
+* Shifted from pure syntax practice to **Real-World Application Scenarios**.
+* Solved logic-based tasks such as:
+* **ATM Simulation:** Managing balance and withdrawal logic.
+* **Electricity Bill Calculation:** Applying different rates based on unit slabs.
+* **Grading Systems:** Logic based on percentage ranges.
+
+
+* Focused on handling **Edge Cases** (e.g., negative inputs, zero values) to ensure program stability.
+
+
+
+#### Practical Tasks:
+
+* Completed the remaining advanced problems from the Control Flow assignment.
+* Developed 20 programs focused specifically on **Array Manipulation** (finding Max/Min values, reversing an array, and element searching).
+
+**Key Learnings (Week 1 Summary):**
+
+* Successfully transitioned from basic syntax to complex logic building.
+* Developed a systematic workflow for tackling multi-level programming challenges.
+* Gained a deeper understanding of how data structures like **Arrays** interact with **Control Flow** to solve enterprise-level scenarios.
+
+---
+
 
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
