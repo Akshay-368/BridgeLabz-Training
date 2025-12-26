@@ -203,15 +203,6 @@ Welcome to the documentation of my training program workflow! This record will b
 * Covered **Single-dimensional arrays**: declaration, initialization, and memory representation.
 * Practiced iteration techniques: Using `foreach` for read-only access vs. `for` loops for index-based manipulation.
 
-
-2. **Scenario-Based Problem Solving**
-* Shifted from pure syntax practice to **Real-World Application Scenarios**.
-* Solved logic-based tasks such as:
-* **ATM Simulation:** Managing balance and withdrawal logic.
-* **Electricity Bill Calculation:** Applying different rates based on unit slabs.
-* **Grading Systems:** Logic based on percentage ranges.
-
-
 * Focused on handling **Edge Cases** (e.g., negative inputs, zero values) to ensure program stability.
 
 
