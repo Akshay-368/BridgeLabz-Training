@@ -218,8 +218,46 @@ Welcome to the documentation of my training program workflow! This record will b
 * Developed a systematic workflow for tackling multi-level programming challenges.
 * Gained a deeper understanding of how data structures like **Arrays** interact with **Control Flow** to solve enterprise-level scenarios.
 
+
 ---
 
+### Date: December 24, 2025 | Day: 6
+
+#### Topics Covered:
+1. **Methods in C#**
+   - Understanding the structure: Access modifiers, return types, and parameters.
+   - Exploring the DRY (Don't Repeat Yourself) principle through encapsulation.
+   - **Static vs. Instance methods**: Differences in memory and invocation.
+   - **Parameter Passing**: Deep dive into `ref`, `out`, and `params` keywords.
+
+#### Practical Tasks:
+- Completed **30+ questions** focusing on method implementation.
+- Modularized previous logic-building tasks into reusable methods to improve code readability.
+
+---
+
+### Date: December 26, 2025 | Day: 8
+
+#### Topics Covered:
+1. **Strings in C#**
+   - Deep dive into String immutability and memory allocation.
+   - Hands-on with string methods: `Split()`, `Substring()`, `Replace()`, and `StringBuilder` for performance optimization.
+2. **Modular Game Design Logic**
+   - Discussed the implementation of a **Snake and Ladders Game**.
+   - **Scenario Details:**
+     - Supports **2 to 4 players**.
+     - Requirement to make the game **modular** using methods.
+     - Implementation of methods like `RollDice()`, `MovePlayer()`, and `CheckForSnakeOrLadder()`.
+
+#### Practical Tasks:
+- Solved **20+ problems** based on String manipulation.
+- **Project Work:** Developed the base structure for the Snake and Ladders game using modular methods to handle game state and player movement.
+
+**Key Learnings:**
+- Improved ability to design applications from a modular perspective.
+- Mastered string handling which is crucial for data processing.
+
+---
 
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
