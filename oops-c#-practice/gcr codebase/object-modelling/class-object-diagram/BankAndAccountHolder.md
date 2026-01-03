@@ -1,4 +1,4 @@
-# Library and Books Aggregation Diagram
+# Problem 2: Bank and Account Holders (Association) Diagram
 
 ```mermaid
 classDiagram
