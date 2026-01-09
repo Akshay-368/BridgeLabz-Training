@@ -236,7 +236,7 @@ Welcome to the documentation of my training program workflow! This record will b
 
 ---
 
-### Date: December 26, 2025 | Day: 8
+### Date: December 26, 2025 | Day: 7
 
 #### Topics Covered:
 1. **Strings in C#**
@@ -259,7 +259,7 @@ Welcome to the documentation of my training program workflow! This record will b
 
 ---
 
-### Date: December 29, 2025 | Day: 9
+### Date: December 29, 2025 | Day: 8
 
 #### Topics Covered:
 1. **Introduction to OOP (Object-Oriented Programming)**
@@ -304,7 +304,7 @@ Welcome to the documentation of my training program workflow! This record will b
 
 ---
 
-### Date: December 30, 2025 | Day: 10
+### Date: December 30, 2025 | Day: 9
 
 #### Topics Covered:
 1. **C# Constructors**
@@ -343,6 +343,269 @@ Welcome to the documentation of my training program workflow! This record will b
 - Improved ability to manage collections of objects using arrays and custom search methods.
 
 ---
+### Date: December 31, 2025 | Day: 10
+
+#### Topics Covered:
+1. **Keyword Specialization**
+   - **`this` Keyword:** Used to refer to the current instance of the class and distinguish between class fields and parameters.
+   - **`static` Keyword:** Applied to methods and fields to make them belong to the class itself rather than a specific object.
+   - **`sealed` Keyword:** Learned how to prevent class inheritance to secure the design and improve performance.
+   - **`is` Operator:** Used for type-checking to verify if an object is compatible with a specific type during runtime.
+
+#### Practical Tasks:
+- Completed a series of scenario-based assignments to integrate OOP keywords with complex logic.
+
+  **Programs:**
+  1. **Bank Account Manager:**
+     - Designed a `BankAccount` class using `AccountNumber` and `Balance` fields.
+     - Implemented `Deposit()`, `Withdraw()`, and `CheckBalance()` methods.
+     - **Overdraft Protection:** Added logical checks to prevent withdrawals that exceed the current balance.
+
+  2. **Mathematical Utility Class:**
+     - Created a robust utility class containing specialized static methods:
+       - **Factorial:** Iterative/Recursive logic for factorials.
+       - **Prime Check:** Logic to determine primality.
+       - **GCD:** Implementing the Euclidean algorithm for the Greatest Common Divisor.
+       - **Fibonacci:** Finding the nth number in the sequence.
+     - **Edge Case Testing:** Validated all methods against zero, one, and negative integers.
+
+  3. **Invoice Generator for Freelancers:**
+     - Developed a tool to parse raw billing strings (e.g., "Logo Design - 3000 INR").
+     - **String Parsing:** Used `Split()` and string manipulation to isolate task names from currency values.
+     - **Total Calculation:** Implemented `GetTotalAmount()` to aggregate the values into a final invoice sum.
+
+**Key Learnings:**
+- Understand when to use **Static** classes for utility functions vs. **Instance** classes for stateful data like Bank Accounts.
+- Mastered string parsing techniques to transform unstructured user input into calculable data.
+- Explored the security benefits of using the **Sealed** keyword in class architecture.
+
+---
+
+### Date: January 1, 2026 | Day: 11
+
+#### Topics Covered:
+1. **Object-Oriented Design (OOD) Principles**
+   - Shifted focus from coding to system architecture and visualization.
+   - **Class Diagrams:** Learned to represent the static structure of a system, including classes, attributes, methods, and their relationships.
+   - **Object Diagrams:** Explored how to model snapshots of instances in a system at a specific point in time to verify class designs.
+   - **Sequence Diagrams:** Studied how to visualize the interaction between objects over time, focusing on the order of messages exchanged to complete a task.
+
+#### Practical Tasks:
+- Developed a menu-driven application focusing on array indexing and modular method design.
+
+  **Programs:**
+  1. **Cafeteria Menu App:**
+     - Built a system to manage a fixed daily menu of 10 items for a campus cafeteria.
+     - **Data Storage:** Utilized a `string[]` array to maintain the list of available food items.
+     - **User Interaction:** Implemented a system where the menu is printed with corresponding index numbers for easy selection.
+     - **Modular Implementation:**
+       - `DisplayMenu()`: Iterates through the array to show the daily offerings.
+       - `GetItemByIndex()`: Retrieves and validates the user's food choice based on their numerical input.
+
+**Key Learnings:**
+- Gained the ability to "blueprint" an application using **UML diagrams** before writing a single line of code.
+- Understood the importance of separating data display logic from data retrieval logic.
+- Practiced defensive programming by ensuring user-selected indices are within the bounds of the menu array.
+
+---
+### Date: January 2, 2026 | Day: 12
+
+#### Topics Covered:
+1. **Inheritance in C#**
+   - Explored the mechanism where a derived class acquires the properties and behaviors of a base class.
+   - **Types of Inheritance:**
+     - **Single Level:** One class inheriting from a single base class.
+     - **Multilevel:** A derived class acting as a base class for another class.
+     - **Hierarchical:** Multiple classes inheriting from one single base class.
+   - **Key Features:** Code reusability, specialized behavior, and simplified maintenance.
+2. **Method Overriding & Polymorphism**
+   - Used the `virtual` and `override` keywords to allow derived classes to provide specific implementations of methods defined in base classes.
+   - Studied how **Polymorphism** allows a base class reference to point to a derived class object.
+3. **Inheritance Mechanics**
+   - **Constructor Inheritance:** Understanding how base class constructors are called using the `base` keyword.
+   - **Access Modifiers:** Analyzing how `protected` and `internal` modifiers affect visibility within the inheritance chain.
+
+#### Practical Tasks:
+- Applied control flow and loop logic to real-world simulation scenarios.
+
+  **Programs:**
+  1. **Bus Route Distance Tracker 🚌:**
+     - Developed a tracker where each stop adds to a cumulative distance.
+     - Implemented a `while` loop to continuously prompt the passenger until they choose to exit/get off.
+     - Used a total distance accumulator to summarize the journey upon exit confirmation.
+
+  2. **Festival Lucky Draw 🎉:**
+     - Simulated a Diwali Mela draw system for multiple visitors using loops.
+     - **Winning Logic:** Implemented conditions using the modulus operator (`%`) to check if a number is divisible by both 3 and 5.
+     - **Validation:** Utilized the `continue` statement to skip processing and re-prompt if an invalid draw number is entered.
+
+**Key Learnings:**
+- Mastered the ability to create class hierarchies to reduce redundancy in large systems.
+- Understood the power of **Method Overriding** in creating flexible and extensible code.
+- Practiced combining complex loop structures (`while` and `continue`) with business-specific winning conditions.
+
+---
+### Date: January 5, 2026 | Day: 13
+
+#### Topics Covered:
+1. **Encapsulation & Data Hiding**
+   - Implemented proper data protection using **Properties** (getters and setters).
+   - Focused on bundling data and the methods that operate on that data within a single unit to prevent unauthorized access.
+2. **Abstraction (Abstract Classes & Interfaces)**
+   - **Abstract Classes:** Used as base classes that cannot be instantiated, providing a partial implementation for derived classes.
+   - **Interfaces:** Defined strict contracts using the `interface` keyword to ensure different classes implement specific behaviors.
+3. **Advanced Polymorphism**
+   - Applied dynamic polymorphism to handle different object types through a single interface or base class reference.
+
+#### Practical Tasks:
+- Developed two comprehensive systems to integrate all four pillars of Object-Oriented Programming.
+
+  **Programs:**
+  1. **Hospital Patient Management System:**
+     - **Classes:** Designed `Patient`, `Doctor`, and `Bill` classes.
+     - **Encapsulation:** Used properties to manage sensitive patient and billing data.
+     - **Abstraction:** Implemented an `IPayable` interface to standardize payment processing across different billing types.
+     - **Inheritance:** Created `InPatient` and `OutPatient` classes inheriting from the base `Patient` class.
+     - **Polymorphism:** Overrode `DisplayInfo()` to provide specific output for different patient categories.
+
+  2. **Vehicle Rental Application:**
+     - **Architecture:** Developed a hierarchy with `Vehicle` as a base for `Bike`, `Car`, and `Truck`.
+     - **Access Control:** Utilized `protected` fields to allow child classes to access vehicle specifications while hiding them from the rest of the application.
+     - **Interface Implementation:** Created an `IRentable` interface with a `CalculateRent(int days)` method.
+     - **Logic:** Each vehicle type (Bike/Car/Truck) provided its own specific rental rate logic through the interface implementation.
+
+**Key Learnings:**
+- Mastered the distinction between **Abstraction** (what a system does) and **Encapsulation** (how it hides its internal state).
+- Learned to use **Interfaces** to decouple code, making the system more flexible and easier to test.
+- Gained experience in designing multi-class systems that interact through inheritance and shared interfaces.
+
+---
+### Date: January 6, 2026 | Day: 14
+
+#### Topics Covered:
+1. **Consolidation of OOP & Interface Implementation**
+   - Focused on completing advanced assignments from the previous session.
+   - Deepened understanding of **Multiple Interface Implementation** (how a single class can implement multiple behaviors).
+   - **Polymorphism with Interfaces:** Using the `is` operator and interface casting to trigger specific behaviors (e.g., `Fly()` or `Swim()`) from a collection of mixed objects.
+
+#### Practical Tasks:
+- Implemented complex real-world logic using polymorphic collections and string filtering.
+
+  **Programs:**
+  1. **EcoWing Bird Sanctuary System:**
+     - **Base Architecture:** Created a `Bird` base class for shared attributes.
+     - **Behavioral Interfaces:** - `IFlyable` with a `Fly()` method.
+       - `ISwimmable` with a `Swim()` method.
+     - **Derived Classes:** - `Eagle` and `Sparrow` (Implemented `IFlyable`).
+       - `Duck` and `Penguin` (Implemented `ISwimmable`).
+       - `Seagull` (Implemented both `IFlyable` and `ISwimmable`).
+     - **Polymorphism in Action:** Used an array to store all birds and iterated through them, using the `is` operator to check interface compatibility before calling the respective action methods.
+
+  2. **Customer Service Call Log Manager:**
+     - **Data Modeling:** Designed a `CallLog` class with `PhoneNumber`, `Message`, and `Timestamp`.
+     - **Collection Management:** Managed an array of `CallLog` objects to simulate a telecom database.
+     - **Search & Filter Logic:** - Implemented `SearchByKeyword()` using `string.Contains` to find specific messages.
+       - Built `FilterByTime()` to retrieve logs within a specific time range.
+       - Developed `AddCallLog()` for dynamic entry management.
+
+**Key Learnings:**
+- Mastered the ability to handle objects based on their **capabilities** (Interfaces) rather than just their **type** (Inheritance).
+- Gained experience in filtering and querying object arrays using string manipulation and conditional logic.
+- Understood how to model real-world wildlife and business scenarios into a clean, modular class hierarchy.
+
+---
+### Date: January 7, 2026 | Day: 15
+
+#### Topics Covered:
+1. **Introduction to Data Structures**
+   - Successfully transitioned from Object-Oriented Programming to the study of memory-efficient data organization.
+   - **Singly Linked List:** Understanding nodes containing data and a reference to the next node.
+   - **Doubly Linked List:** Exploring nodes with two references (next and previous) allowing two-way traversal.
+   - **Circular Linked List:** Learning the structure where the last node points back to the first, creating a continuous loop.
+2. **Professional Git Workflow**
+   - Practiced working with the Master branch for stable releases.
+   - Applied basic Git flows including committing and branching for specific feature sets (Use Cases).
+
+#### Practical Tasks:
+- Initiated the **Employee Wage Computation Problem**, integrating all previously learned C# concepts into a single, scalable project.
+
+  **Project Milestones (Use Cases):**
+  - **Project Setup:** Initialized the program with a welcome message on the Master branch.
+  - **UC1 (Attendance):** Used the `Random` class to simulate employee attendance (Present/Absent).
+  - **UC2 (Daily Wage):** Calculated wages based on parameters (Wage per Hour = 20, Full Day = 8 hours).
+  - **UC3 (Part-Time):** Added support for part-time employee logic with an 8-hour shift assumption.
+  - **UC4 (Refactoring):** Implemented `switch-case` statements to handle different employee types more efficiently.
+  - **UC5 (Monthly Calculation):** Added logic to compute wages for a standard working month of 20 days.
+  - **UC6 (Conditional Logic):** Implemented a loop to calculate wages until a specific limit is reached (either 100 total hours or 20 total days).
+
+**Key Learnings:**
+- Developed a deep understanding of manual memory linking through **Linked Lists**.
+- Learned how to structure a professional project using **Use Cases (UC)** to break down complex requirements.
+- Mastered the use of static and instance variables to maintain state across an entire computation module.
+- Gained experience in using **Randomization** to simulate real-world uncertainty in business logic.
+
+---
+### Date: January 8, 2026 | Day: 16
+
+#### Topics Covered:
+1. **Linear Data Structures**
+   - **Stack (LIFO):** Learned the Last-In-First-Out principle using `Push()` and `Pop()` operations.
+   - **Queue (FIFO):** Explored the First-In-First-Out mechanism using `Enqueue()` and `Dequeue()`.
+2. **Hashing & Key-Value Pairs**
+   - **Dictionary (HashMap):** Studied the implementation of unique key-value pairs for fast data retrieval ($O(1)$ average time complexity).
+   - **Hash Function:** Understanding how hash functions map data of arbitrary size to fixed-size values to enable efficient indexing.
+
+#### Practical Tasks:
+- Continued reinforcing **Object-Oriented Programming (OOP)** through a specialized automation scenario.
+
+  **Programs:**
+  1. **Smart Home Automation System:**
+     - **Architecture:** Created a base `Appliance` class with derived classes for `Light`, `Fan`, and `AC`.
+     - **Interface Implementation:** Developed an `IControllable` interface featuring `TurnOn()` and `TurnOff()` methods.
+     - **Advanced Polymorphism:** - Implemented specialized behavior for each appliance.
+       - Example: Turning on a `Light` might adjust brightness/color, whereas turning on an `AC` initializes temperature settings and fan speed.
+     - **Encapsulation:** Protected the internal state of each appliance (e.g., current temperature or power status) using private fields and public properties.
+
+**Key Learnings:**
+- Gained clarity on when to use a **Stack** (e.g., undo operations) versus a **Queue** (e.g., printer tasks).
+- Mastered the use of **Dictionaries** for scenarios requiring high-performance data lookups.
+- Refined the ability to use **Interfaces** to group different objects (Light, AC) under a common behavior (`IControllable`) while maintaining unique polymorphic implementations.
+
+---
+### Date: January 9, 2026 | Day: 17
+
+#### Topics Covered:
+1. **Sorting Algorithms (Deep Dive)**
+   - Started a comprehensive study of sorting techniques to optimize data organization:
+     - **Bubble Sort:** Simple comparison-based sorting by repeatedly swapping adjacent elements.
+     - **Insertion Sort:** Building the final sorted array one item at a time (efficient for small datasets).
+     - **Merge Sort:** A "Divide and Conquer" algorithm that splits arrays into halves, sorts them, and merges them back.
+     - **Quick Sort:** High-performance sorting using a "pivot" element to partition the array.
+2. **Greedy Algorithms & Logic**
+   - Explored the **Optimal Change Problem** to understand how to minimize the number of units (notes) used to reach a specific target value.
+
+#### Practical Tasks:
+- Balanced advanced Object-Oriented design with complex algorithmic problem-solving.
+
+  **Programs:**
+  1. **FitTrack – Fitness Tracker:**
+     - **Core Classes:** Designed `UserProfile` to manage user data and `Workout` as a base class.
+     - **Interface Implementation:** Used `ITrackable` to ensure all workout types can log metrics.
+     - **Specialized Workouts:** Implemented `CardioWorkout` and `StrengthWorkout`, each providing unique logic for calorie and progress tracking.
+
+  2. **ATM Dispenser Logic (Data Structures & Optimization):**
+     - **Scenario A:** Implemented logic to dispense the minimum number of notes for ₹880 using a standard currency set (₹500, ₹200, ₹100, etc.).
+     - **Scenario B (Constraint Testing):** Modified the algorithm to handle the temporary removal of the ₹500 note, forcing the system to re-calculate using smaller denominations.
+     - **Scenario C (Edge Cases):** Developed a fallback mechanism to display the closest possible combination if the exact change cannot be formed.
+
+  3. **Sorting Assignment:**
+     - Started work on a **7-question comprehensive assignment** focusing on implementing and comparing the efficiency (Time/Space Complexity) of Bubble, Insertion, Merge, and Quick sort.
+
+**Key Learnings:**
+- Understood the trade-offs between different sorting algorithms ($O(n^2)$ vs $O(n \log n)$).
+- Gained experience in modifying algorithms on the fly to handle real-world constraints (like a missing currency note).
+- Refined the use of **Interfaces** to manage different types of physical activities under a unified fitness tracking system.
+
 
 ---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
