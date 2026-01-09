@@ -259,5 +259,91 @@ Welcome to the documentation of my training program workflow! This record will b
 
 ---
 
+### Date: December 29, 2025 | Day: 9
+
+#### Topics Covered:
+1. **Introduction to OOP (Object-Oriented Programming)**
+   - Transitioned from procedural logic to Object-Oriented paradigms.
+   - **Procedural vs. Object-Oriented Programming:**
+     - **Procedural:** Focuses on functions and sequences of actions (top-down approach).
+     - **OOP:** Focuses on "objects" that contain both data (fields) and behavior (methods), promoting better organization and reusability.
+   - **Classes and Objects:**
+     - Understanding a **Class** as a blueprint or template.
+     - Understanding an **Object** as a real-world entity or instance of that blueprint.
+
+#### Practical Tasks:
+- Focused on advanced **String Manipulation** and **Multi-dimensional Arrays** to reinforce logic-building without relying heavily on built-in .NET functions.
+
+  **Programs:**
+  1. **Strings – Sentence Formatter:**
+     - Developed a method to auto-correct paragraph formatting.
+     - Implemented logic to ensure exactly one space follows punctuation and capitalization after period/question/exclamation marks.
+     - Handled trimming of extra spaces.
+
+  2. **Text Analyzer Program:**
+     - Implemented manual word counting and identification of the longest word.
+     - Created a case-insensitive word replacement feature.
+     - Added robust handling for empty strings or whitespace-only paragraphs.
+
+  3. **Arrays – Temperature Analyzer:**
+     - Worked with a **2D array (float[7][24])** to analyze hourly temperature data for a week.
+     - Implemented logic to find the hottest and coldest days.
+     - Calculated the average temperature for each specific day.
+
+  4. **Student Score Management:**
+     - Program to store and process scores for *n* students.
+     - Calculated average scores and identified the highest/lowest marks.
+     - Filtered and displayed scores that performed above the average.
+     - Implemented validation for invalid inputs like negative scores or non-numeric data.
+
+**Key Learnings:**
+- Deepened understanding of manual memory/index handling in Strings by avoiding built-in shortcuts.
+- Gained experience navigating and processing data within **multi-dimensional arrays**.
+- Visualized the shift from writing scripts to designing systems using Classes and Objects.
+- Practiced implementing complex business logic through custom algorithms.
+
+---
+
+### Date: December 30, 2025 | Day: 10
+
+#### Topics Covered:
+1. **C# Constructors**
+   - Learned how to use constructors to initialize object state at the time of creation.
+   - Explored default vs. parameterized constructors.
+2. **Instance vs. Class Variables**
+   - **Instance Variables:** Variables tied to a specific object (unique to each instance).
+   - **Class Variables (static):** Variables shared across all instances of a class, stored in a single memory location.
+3. **Access Modifiers (Level 1)**
+   - Focused on the practical application of `public` and `private` for encapsulation.
+   - Understanding how to protect internal data using private fields and providing controlled access.
+
+#### Practical Tasks:
+- Implemented real-world scenarios to apply constructor logic and object-oriented data management.
+
+  **Programs:**
+  1. **EduQuiz – Student Quiz Grader:**
+     - Developed a grading module using two `String[]` arrays: `correctAnswers[]` and `studentAnswers[]`.
+     - Implemented `CalculateScore(string[] correct, string[] student)` to process results.
+     - Used case-insensitive string comparison to ensure fair grading.
+     - Added a feedback loop to print "Correct/Incorrect" for each question.
+     - **Bonus Feature:** Included a percentage calculation and a final Pass/Fail status message.
+
+  2. **Library Management System (Book Search & Checkout):**
+     - Designed a system to manage book details including **Title**, **Author**, and **Status** (Available/Checked Out).
+     - Used arrays to store and manage multiple book objects.
+     - Implemented **Partial Title Search** using string operations to help users find books easily.
+     - Created modular methods for:
+       - `SearchBook()`: Locating books by title.
+       - `DisplayBooks()`: Listing all library inventory.
+       - `UpdateStatus()`: Handling the checkout and return logic.
+
+**Key Learnings:**
+- Mastered the use of **Constructors** to ensure objects are always in a valid state upon creation.
+- Gained clarity on memory allocation differences between **Static** and **Instance** members.
+- Improved ability to manage collections of objects using arrays and custom search methods.
+
+---
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
