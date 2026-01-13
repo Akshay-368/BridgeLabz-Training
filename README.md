@@ -608,5 +608,93 @@ Welcome to the documentation of my training program workflow! This record will b
 
 
 ---
+
+### Date: January 9, 2026 | Day: 18
+
+#### Topics Covered:
+1. **Optimization & Greedy Logic (Rod Cutting)**
+   - Explored the **Rod Cutting Problem** to understand how to maximize value by partitioning a whole into smaller pieces based on a price chart.
+   - Practiced analyzing the impact of constraints (like fixed waste or custom lengths) on total revenue.
+2. **C# String Handling & IO Operations**
+   - **StringBuilder vs. StringBuffer:** Studied the differences in thread safety and performance for mutable strings.
+   - **File IO:** Learned to read data using `FileReader` and `InputStreamReader` for handling external data sources.
+3. **Search Algorithms**
+   - **Linear Search:** Sequential checking of every element ($O(n)$ complexity).
+   - **Binary Search:** Efficient searching in sorted arrays by repeatedly dividing the search interval in half ($O(\log n)$ complexity).
+
+#### Practical Tasks:
+- Implemented high-level business logic and algorithmic optimization scenarios.
+
+  **Programs:**
+  1. **Industrial Optimization (Metal & Wood Cutting):**
+     - **Scenario A:** Developed logic to find the best cut strategy for an 8ft metal rod and a 12ft wooden rod to maximize earnings.
+     - **Scenario B:** Modified logic to incorporate "Custom-length orders" and "Fixed waste constraints."
+     - **Scenario C:** Created a comparison to visualize the revenue loss when using non-optimized cut strategies.
+
+  2. **LoanBuddy – Loan Approval Automation:**
+     - **Core Architecture:** Designed `Applicant` and `LoanApplication` classes.
+     - **Encapsulation:** Secured `creditScore` and internal approval logic using private access modifiers to prevent external tampering.
+     - **Inheritance:** Extended the base loan class into `HomeLoan` and `AutoLoan`.
+     - **Interface & Math:** Implemented `IApprovable` to standardize `approveLoan()` and `calculateEMI()`.
+     - **EMI Formula Implementation:** Used the standard formula: $$P \times R \times \frac{(1+R)^N}{(1+R)^N - 1}$$
+     - **Polymorphism:** Customized the EMI calculation and interest rates based on the specific loan type.
+
+  3. **Search & IO Assignment:**
+     - Developed a suite of tools to demonstrate **Linear** and **Binary Search** performance.
+     - Practiced reading configuration files using **InputStreamReader** to initialize program state.
+
+**Key Learnings:**
+- Mastered the ability to translate complex financial formulas into clean, encapsulated C# code.
+- Gained a deep understanding of why **Binary Search** is superior for large, sorted datasets.
+- Learned to handle real-world manufacturing constraints (waste management) through algorithmic adjustments.
+- Understood the performance benefits of **StringBuilder** when performing heavy string concatenations in loops.
+
+---
+### Date: January 13, 2026 | Day: 19
+
+#### Topics Covered:
+1. **Dynamic Collections (List & ArrayList)**
+   - Moved beyond fixed-size arrays to dynamic collections.
+   - Learned the benefits of `List<T>` for type safety and `ArrayList` for flexible data storage.
+   - Practiced converting collections to arrays using `.ToArray()` for report generation and exports.
+2. **Exception Handling & Custom Exceptions**
+   - **Try-Catch-Finally:** Learned to handle runtime errors gracefully without crashing the application.
+   - **Custom Exceptions:** Practiced throwing specific exceptions (e.g., `InvalidTimeFormatException`) to enforce business rules.
+   - **Built-in Exceptions:** Handled common errors like `IndexOutOfBoundsException` and null checks.
+3. **Algorithm Analysis & Best Practices**
+   - **Big O Notation:** Introduced to Time and Space Complexity analysis.
+   - **Optimization:** Discussed best practices for writing clean, efficient code by reducing redundant loops and memory allocations.
+
+#### Practical Tasks:
+- Developed user-centric applications focusing on data management and robust error handling.
+
+  **Programs:**
+  1. **CinemaTime – Movie Schedule Manager:**
+     - **Data Management:** Used separate `List<string>` collections for movie titles and showtimes.
+     - **Functionalities:**
+       - `AddMovie()`: Appends new titles and times.
+       - `SearchMovie()`: Implemented keyword search using `string.Contains`.
+       - `DisplayAllMovies()`: Formatted output using string concatenation and `.format()`.
+     - **Exception Handling:** - Handled `IndexOutOfBoundsException` for search errors.
+       - Created logic to throw an `InvalidTimeFormatException` for impossible times like "25:99".
+
+  2. **BookBuddy – Digital Bookshelf App:**
+     - **Storage:** Used an `ArrayList` to store books in a specific "Title - Author" format.
+     - **Logic:**
+       - `SortBooksAlphabetically()`: Used collection sorting algorithms to organize the shelf.
+       - `SearchByAuthor()`: Leveraged `string.Split()` to isolate and verify the author name within the formatted string.
+     - **Error Resilience:**
+       - Implemented `try-catch` blocks to manage empty list scenarios.
+       - Enforced a strict input format via a custom `InvalidBookFormatException`.
+
+  3. **Complexity & Optimization Assignment:**
+     - Conducted a review of previous logic-building tasks to identify areas where time complexity could be improved from $O(n^2)$ to $O(n \log n)$ or $O(n)$.
+
+**Key Learnings:**
+- Mastered the transition from **Static Arrays** to **Dynamic Lists**, allowing for more flexible data input.
+- Understood that **Exception Handling** is not just for errors, but for enforcing domain-specific rules (like valid time formats).
+- Learned to evaluate code not just by "if it works," but by its **Efficiency and Scalability** using Big O analysis.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
