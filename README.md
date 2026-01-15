@@ -728,7 +728,7 @@ Welcome to the documentation of my training program workflow! This record will b
 - Gained experience in overriding `Equals()` and `ToString()` to customize object interaction within manual arrays.
 
 ---
-### Date: January 15, 2026 | Day: 22
+### Date: January 15, 2026 | Day: 21
 
 #### Topics Covered:
 1. **Hybrid Data Structures**
