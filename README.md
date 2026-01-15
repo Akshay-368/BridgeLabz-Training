@@ -696,5 +696,67 @@ Welcome to the documentation of my training program workflow! This record will b
 - Learned to evaluate code not just by "if it works," but by its **Efficiency and Scalability** using Big O analysis.
 
 ---
+### Date: January 14, 2026 | Day: 20
+
+#### Topics Covered:
+1. **Manual Data Management (Arrays & Strings Only)**
+   - Focused on building a complex system without the Collection Framework to master low-level data handling.
+   - **Array Manipulation:** Implementing CRUD (Create, Read, Update, Delete) operations using fixed-size arrays and manual indexing.
+   - **String Logic:** Using string comparison and formatting to manage contact details and search functionality.
+2. **System Architecture & Professional Standards**
+   - **Code Hygiene:** Strict adherence to naming conventions and indentation to ensure maintainability.
+   - **Branching Strategy:** Managed a professional Git workflow by creating separate branches for each of the 11 Use Cases (UC) and merging them into the Master branch.
+   - **Object-Oriented Mapping:** Establishing relationships between the `AddressBookMain`, `AddressBook`, and `Contact` classes using only custom objects and array storage.
+
+#### Practical Tasks:
+- Initiated the **AddressBook System**, building the core engine through 11 progressive Use Cases using pure C# arrays and string operations.
+
+  **Project Milestones (Use Cases 1 - 11):**
+  - **UC 1-2 (Initialization):** Created the `Contact` class (Name, Address, Zip, etc.) and implemented manual array storage for entries.
+  - **UC 3-4 (CRUD Operations):** Developed algorithms to **Edit** and **Delete** contacts by searching through array indices and shifting elements to maintain data integrity.
+  - **UC 5-6 (Multi-Management):** Expanded the system to support multiple persons and multiple named Address Books using array-based "dictionaries" (manual key-value mapping).
+  - **UC 7 (Duplicate Prevention):** Implemented a manual loop to check for duplicate names before adding a new contact.
+  - **UC 8-10 (Search & Analytics):**
+    - Built search logic to filter and display persons across different cities or states by iterating through the arrays.
+    - Implemented manual **Count** logic to aggregate contacts by location.
+  - **UC 11 (Sorting):** Developed a manual sorting algorithm (e.g., Bubble Sort) to organize address book entries alphabetically by name.
+
+**Key Learnings:**
+- Deepened understanding of **Memory Management** by handling data limits and array resizing manually.
+- Mastered the **CRUD pattern** from a fundamental level, ensuring a strong foundation before moving to automated collections.
+- Learned the importance of **Git Version History** and modular development in a project-based environment.
+- Gained experience in overriding `Equals()` and `ToString()` to customize object interaction within manual arrays.
+
+---
+### Date: January 15, 2026 | Day: 22
+
+#### Topics Covered:
+1. **Hybrid Data Structures**
+   - Explored the combination of multiple data structures to solve complex, real-world state management problems.
+   - **Doubly Linked List in Action:** Used for linear navigation (Back/Forward) where each node represents a visited URL with pointers to both the previous and next pages.
+   - **Stack for Session Recovery:** Implemented a "Last-In-First-Out" (LIFO) stack to store closed tabs, allowing users to restore their most recently closed session.
+2. **Pointer-Based Memory Management**
+   - Focused on memory efficiency by using references (pointers) to navigate history rather than duplicating data.
+   - Studied the mechanics of updating `head`, `tail`, and `current` pointers during tab transitions.
+
+#### Practical Tasks:
+- Developed **BrowserBuddy**, a tab history manager simulating modern browser navigation logic.
+
+  **Programs:**
+  1. **BrowserBuddy – Tab History Manager:**
+     - **Navigation Logic:** Implemented a Doubly Linked List to support seamless "Forward" and "Backward" operations.
+     - **Undo/Restore Feature:** Integrated a **Stack** to hold `Tab` objects upon closure.
+     - **Methods Implemented:**
+       - `VisitPage(string url)`: Adds a new node to the history and clears the "forward" stack.
+       - `GoBack()` / `GoForward()`: Moves the current pointer across the Doubly Linked List.
+       - `CloseTab()`: Pushes the current tab state onto the "Closed Tabs" stack.
+       - `RestoreTab()`: Pops the last closed tab from the stack and reintegrates it into the active session.
+
+**Key Learnings:**
+- Mastered the practical difference between **linear navigation** (Linked Lists) and **temporal storage** (Stacks).
+- Gained experience in managing "state" in an application—understanding how to keep track of where a user is and where they have been.
+- Improved ability to design memory-efficient systems by manipulating pointers instead of rebuilding collections during navigation.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
