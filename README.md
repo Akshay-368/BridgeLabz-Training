@@ -758,5 +758,42 @@ Welcome to the documentation of my training program workflow! This record will b
 - Improved ability to design memory-efficient systems by manipulating pointers instead of rebuilding collections during navigation.
 
 ---
+
+### Date: January 16, 2026 | Day: 22
+
+#### Topics Covered:
+1. **Custom Data Structure Implementation (No Collections Framework)**
+   - **Circular Linked List (CLL):** Built a manual CLL where the tail node points back to the head, simulating a continuous loop for resource scheduling.
+   - **Custom Queue:** Implemented a fixed-size array-based Queue with manual `front` and `rear` pointer management to handle overflow and underflow.
+   - **Custom HashMap/Dictionary:** Designed a manual hashing system using an array of custom Linked Lists (Chaining) to handle collisions and map keys to values.
+2. **Hybrid System Design**
+   - Focused on "Chaining" logic: where an array index (Genre) points to the head of a custom Linked List (Books).
+
+#### Practical Tasks:
+- Developed two advanced simulation systems using strictly custom-built data structures, OOP principles, and Core C#.
+
+  **Programs:**
+  1. **TrafficManager – Roundabout Vehicle Flow:**
+     - **Circular Path:** Represented a roundabout using a **Custom Circular Linked List**, where vehicles can enter and exit dynamically without a "dead end."
+     - **Waiting Logic:** Implemented a **Manual Queue** to manage vehicles waiting to enter the roundabout.
+     - **Functionalities:** - Added/Removed vehicle nodes.
+       - Handled **Queue Overflow** (when the entry road is full) and **Underflow** (when no vehicles are waiting).
+       - Method to traverse the circular list to print the real-time state of the roundabout.
+
+  2. **BookShelf – Library Organizer:**
+     - **Custom Catalog:** Built a **Custom HashMap** mapping `Genre` (String) to a `Custom Linked List` of books.
+     - **Logic:** - Used a custom hash function to determine the array index for each genre.
+       - Each bucket in the array holds a Linked List to handle multiple books within the same genre (Collision Handling).
+     - **Operations:**
+       - Efficient insertion and deletion of books when borrowed or returned.
+       - Implemented manual loops to ensure no duplicate books exist within a specific genre list.
+
+**Key Learnings:**
+- Mastered **Collision Handling** in HashMaps by manually implementing "Chaining" with Linked Lists.
+- Understood the power of **Circular Data Structures** for modeling real-world loops like traffic flow.
+- Gained deep insight into **Memory Management** by manually linking nodes and managing array bounds without the safety net of the .NET Collection Library.
+- Refined the ability to combine multiple custom structures (Queue + CLL) to solve multi-stage problems.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
