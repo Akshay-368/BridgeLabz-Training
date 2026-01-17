@@ -795,5 +795,40 @@ Welcome to the documentation of my training program workflow! This record will b
 - Refined the ability to combine multiple custom structures (Queue + CLL) to solve multi-stage problems.
 
 ---
+
+### Date: January 17, 2026 | Day: 23
+
+#### Topics Covered:
+1. **Algorithmic Efficiency & Selection**
+   - **Divide and Conquer (Quick Sort):** Studied the recursive partitioning strategy. Learned why choosing a "pivot" is critical for achieving an average-case time complexity of $O(n \log n)$ when handling millions of records.
+   - **Brute Force Optimization (Bubble Sort):** Analyzed the $O(n^2)$ complexity. Understood that for small, nearly-sorted datasets (like real-time leaderboards), the simplicity and low overhead of Bubble Sort can be advantageous.
+2. **Manual Memory Swapping**
+   - Implemented manual `Swap()` logic to reorder elements within fixed arrays without using temporary lists or built-in sort methods.
+
+#### Practical Tasks:
+- Implemented two distinct sorting engines tailored for specific e-commerce and fitness industry scenarios.
+
+  **Programs:**
+  1. **FlashDealz – Product Sorting by Discount:**
+     - **Scenario:** Processing a flash sale with a massive dataset of product discounts.
+     - **Implementation:** Built a **Custom Quick Sort** algorithm.
+     - **Logic:** - Partitioned the product array based on a pivot discount value.
+       - Recursively sorted the high-discount and low-discount subarrays to bring the "Top Deals" to the front.
+     - **Performance:** Optimized for large-scale data where manual iteration would be too slow.
+
+  2. **FitnessTracker – Daily Step Count Ranking:**
+     - **Scenario:** Managing a leaderboard for a small group (under 20 users) with frequent real-time updates.
+     - **Implementation:** Built a **Custom Bubble Sort**.
+     - **Logic:** - Performed adjacent comparisons of step counts, "bubbling" the highest counts to the top of the array.
+       - Optimized with a `swapped` flag to terminate the pass early if the list is already sorted, making it efficient for last-minute step syncing.
+     - **Context:** Leveraged the algorithm's stability to handle frequent re-sorting as new data points arrive.
+
+**Key Learnings:**
+- Mastered the **Pivot and Partition** logic, which is the backbone of high-performance sorting.
+- Understood the trade-off between **Algorithm Complexity** and **Data Size**: Quick Sort for millions of products vs. Bubble Sort for a small group of friends.
+- Gained hands-on experience in **Recursive Programming** and managing the call stack manually during Quick Sort execution.
+- Refined the ability to implement real-time data re-sorting using only core C# arrays.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
