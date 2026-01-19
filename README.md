@@ -830,5 +830,43 @@ Welcome to the documentation of my training program workflow! This record will b
 - Refined the ability to implement real-time data re-sorting using only core C# arrays.
 
 ---
+### Date: January 19, 2026 | Day: 24
+
+#### Topics Covered:
+1. **C# Generics**
+   - Introduced the concept of type parameters (`<T>`) to create highly reusable classes and methods.
+   - **Benefits:** Learned how Generics provide type safety without the overhead of boxing/unboxing, while eliminating the need for duplicate code for different data types.
+   - **Generic Constraints:** Explored how to restrict generic types to specific interfaces or base classes.
+2. **Advanced System Design with Custom DSA**
+   - **Singly Linked List (SLL):** Used for linear state-machine transitions (tracking progress).
+   - **Stack & Hashing Integration:** Combined LIFO navigation with a manual Key-Value storage system to handle real-time data input and retrieval.
+
+#### Practical Tasks:
+- Implemented a suite of generic-based solutions and two comprehensive simulation systems using custom-built logic.
+
+  **Programs:**
+  1. **ParcelTracker – Delivery Chain Management:**
+     - **Architecture:** Used a **Custom Singly Linked List** to represent the lifecycle of a parcel (Packed → Shipped → In Transit → Delivered).
+     - **Dynamic Routing:** Implemented logic to add custom intermediate checkpoints between existing nodes.
+     - **Fault Tolerance:** Developed rigorous handling for "lost parcels" by managing null pointers and ensuring the chain doesn't break during traversal.
+
+  2. **ExamProctor – Online Exam Review System:**
+     - **Navigation Logic:** Used a **Manual Stack** to track the last-visited questions, enabling a "Back" feature for students.
+     - **Answer Storage:** Implemented a **Custom HashMap** (Genre-to-List style chaining) to map `QuestionID` to `Answer`.
+     - **Evaluation Engine:** Created specialized functions to iterate through the HashMap and auto-calculate the final score based on stored answers versus a key.
+
+  3. **Generics Assignment:**
+     - Completed a **5-question implementation task** focusing on:
+       - Creating a Generic `Box<T>` to store any data type.
+       - Implementing a Generic `Swap<T>` method.
+       - Designing a Generic `List` equivalent from scratch to handle various object types (int, string, custom objects).
+
+**Key Learnings:**
+- Mastered the ability to write **Type-Safe** code using Generics, significantly reducing code redundancy.
+- Gained experience in modeling **Process Flows** using Singly Linked Lists, focusing on sequential state transitions.
+- Understood how to combine a **Stack** (for navigation) and a **HashMap** (for data lookup) to build a multi-functional application like a Proctoring system.
+- Refined pointer management when handling missing data (null pointers) in custom-built chains.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
