@@ -868,5 +868,40 @@ Welcome to the documentation of my training program workflow! This record will b
 - Refined pointer management when handling missing data (null pointers) in custom-built chains.
 
 ---
+
+### Date: January 20, 2026 | Day: 25
+
+#### Topics Covered:
+1. **Non-Comparison Sorting (Radix Sort)**
+   - Studied **Radix Sort** to handle large numerical datasets (like 12-digit Aadhar numbers).
+   - Learned how to sort digit-by-digit (from Least Significant Digit to Most Significant Digit) to achieve linear time complexity $O(nk)$ for fixed-length keys.
+   - **Stability:** Focused on maintaining the relative order of records with identical prefixes.
+2. **Backtracking Algorithms**
+   - Explored the "Trial and Error" nature of Backtracking to find solutions by exploring all possibilities and abandoning paths that fail.
+   - Applied recursive logic to build strings and states dynamically.
+3. **Introduction to Collections Framework**
+   - Began the official assignment on the **C# System.Collections** and **System.Collections.Generic** namespaces.
+   - Transitioning from manual array management to built-in types like `List<T>`, `Dictionary<K,V>`, and `HashSet<T>`.
+
+#### Practical Tasks:
+- Implemented high-security and optimization scenarios using manual arrays and custom-built logic.
+
+  **Programs:**
+  1. **Aadhar Number Processor:**
+     - **Scenario A (Radix Sort):** Implemented a manual Radix Sort to organize 12-digit numbers. Since 12-digit numbers exceed `int` capacity, logic was handled using `long` or string-index mapping.
+     - **Scenario B (Search):** Developed a **Binary Search** algorithm to perform high-speed lookups in the $O(\log n)$ sorted dataset.
+     - **Scenario C (Stability):** Ensured the sorting logic preserved the original entry order for matching prefixes, verifying the "Stable Sort" property.
+
+  2. **Vault Password Cracker Simulator:**
+     - **Backtracking Logic:** Built a recursive engine to generate all possible alphanumeric combinations of length $n$.
+     - **State Termination:** Implemented an early-exit condition to stop the recursion immediately once the target password is matched.
+     - **Complexity Analysis:** Manually calculated the exponential time complexity $O(k^n)$—where $k$ is the character set and $n$ is length—to visualize the physical limits of brute-force cracking.
+
+**Key Learnings:**
+- Understood that **Radix Sort** is significantly faster than Quick Sort for specific data types like ID numbers or Zip codes.
+- Mastered the **Recursive Backtracking** pattern, which is essential for solving puzzles, pathfinding, and optimization problems.
+- Successfully managed the transition from **manual data structures** to the **Collections Framework**, appreciating the internal complexity of the libraries now that I have built them from scratch.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
