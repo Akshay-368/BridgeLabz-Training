@@ -903,5 +903,44 @@ Welcome to the documentation of my training program workflow! This record will b
 - Successfully managed the transition from **manual data structures** to the **Collections Framework**, appreciating the internal complexity of the libraries now that I have built them from scratch.
 
 ---
+
+### Date: January 21, 2026 | Day: 26
+
+#### Topics Covered:
+1. **Divide and Conquer (Merge Sort)**
+   - Studied the efficiency of $O(n \log n)$ sorting.
+   - **Stability in Sorting:** Focused on how Merge Sort preserves the relative order of items with equal values (critical for student ranking systems).
+   - **Merging Logic:** Mastered the process of taking two pre-sorted sub-lists and combining them into a single sorted list efficiently.
+2. **C# Streams & Data Handling**
+   - **Stream Processing:** Learned to read and write data as a continuous flow of bytes or characters.
+   - **File Streams:** Practiced handling large datasets that are too big for memory by using `FileStream` and `StreamReader/StreamWriter`.
+3. **Advanced System Interaction**
+   - Practiced combining **FIFO (Queues)** for flow control with **HashMaps** for instant data lookup.
+
+#### Practical Tasks:
+- Built high-capacity simulation tools using custom algorithms and stream-based data handling.
+
+  **Programs:**
+  1. **EduResults – Rank Sheet Generator:**
+     - **Scenario:** Merging district-wise student results into a single state-wide leaderboard.
+     - **Implementation:** Built a **Custom Merge Sort** engine.
+     - **Logic:** - Implemented the recursive "Divide" phase to break down the thousands of records.
+       - Built a robust "Merge" function that takes two sorted district arrays and combines them while maintaining stability for students with identical scores.
+     - **Scalability:** Designed to handle large datasets where stability and performance are equally prioritized.
+
+  2. **SmartCheckout – Supermarket Billing System:**
+     - **Queue Management:** Implemented a **Custom Queue** for each checkout counter to manage customer flow (First-In, First-Out).
+     - **Pricing Engine:** Used a **Custom HashMap** (Genre-to-List style) where `ItemName` acts as the key to fetch `Price` and `StockCount` in $O(1)$ time.
+     - **Transaction Logic:** - Programmatically decremented stock levels upon successful purchase.
+       - Handled "Out of Stock" scenarios during the checkout process.
+       - Calculated the final bill by iterating through the customer's item list and fetching values from the Map.
+
+**Key Learnings:**
+- Understood why **Merge Sort** is the industry standard for external sorting and merging pre-sorted data.
+- Mastered the interaction between different data structures: using a **Queue** to manage people and a **HashMap** to manage inventory data simultaneously.
+- Gained experience in **Stream Processing**, understanding how to handle data inputs that might come from external district files.
+- Refined manual memory logic by ensuring that pointers and array indices are perfectly synchronized during complex merge operations.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
