@@ -942,5 +942,34 @@ Welcome to the documentation of my training program workflow! This record will b
 - Refined manual memory logic by ensuring that pointers and array indices are perfectly synchronized during complex merge operations.
 
 ---
+### Date: January 22, 2026 | Day: 27
+
+#### Topics Covered:
+1. **Advanced Exception Handling**
+   - Deepened understanding of the `try-catch-finally` block for mission-critical systems.
+   - **Propagating Exceptions:** Learned how to throw and re-throw exceptions when a required resource (like an available hospital bed) is not found.
+   - **Custom Error States:** Practiced defining specific error scenarios, such as `UnitUnderMaintenanceException` or `NoAvailableUnitException`.
+2. **Circular Resource Allocation**
+   - Focused on the **Circular Linked List (CLL)** as a model for systems that have no defined end-point and require continuous polling.
+
+#### Practical Tasks:
+- Developed a high-stakes medical navigation simulation using custom-built CLL and robust error handling.
+
+  **Programs:**
+  1. **AmbulanceRoute – Emergency Patient Navigation:**
+     - **Circular Unit Mapping:** Created a manual CLL representing the hospital loop: **Emergency → Radiology → Surgery → ICU → Emergency**.
+     - **Search & Rotation Logic:** - Implemented a rotation algorithm that starts from the entry point and traverses the circular path to find the first node marked as "Available."
+       - Ensured the logic handles the scenario where the search returns to the starting node (all units full).
+     - **Maintenance Management:** - Developed a method to "Remove" a node (Building/Unit) from the circular chain if it is flagged for maintenance, carefully reconnecting the `next` pointers to maintain the loop's integrity.
+       - Integrated **Exception Handling** to catch errors if an ambulance attempts to route a patient to a unit that was just taken offline.
+     - **Redirection Simulation:** Used logic to redirect patients in a continuous circular path until a "Success" state is reached or an exception is thrown.
+
+**Key Learnings:**
+- Mastered the **"Next-Fit" allocation logic** by using a Circular Linked List to find the nearest available resource.
+- Learned to handle **Pointer Reassignment** in a circular structure, which is significantly more complex than a standard list because the tail must always point back to the head.
+- Understood the critical role of **Exception Handling** in real-time systems; for an ambulance, an unhandled exception or a broken link in the data could simulate a system failure.
+- Reinforced the **No Collection Framework** constraint by manually managing node references and building state-check loops.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
