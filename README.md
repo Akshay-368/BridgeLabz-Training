@@ -971,5 +971,47 @@ Welcome to the documentation of my training program workflow! This record will b
 - Reinforced the **No Collection Framework** constraint by manually managing node references and building state-check loops.
 
 ---
+
+### Date: January 23, 2026 | Day: 28
+
+#### Topics Covered:
+1. **Automated Testing with MSTest**
+   - Learned the fundamentals of Unit Testing to ensure code reliability.
+   - Practiced writing test methods with `[TestMethod]` and `[TestClass]` attributes.
+   - Focused on **Assertions** (`Assert.AreEqual`, `Assert.IsTrue`) to validate that custom DSA logic behaves as expected under edge cases.
+2. **Regular Expressions (Regex)**
+   - Studied pattern matching for data validation.
+   - Mastered the use of quantifiers, character classes, and anchors to validate complex strings like Email IDs, Phone Numbers (from the AddressBook project), and Aadhar numbers.
+3. **Annotations & Reflection**
+   - **Annotations:** Used metadata attributes to provide instructions to the compiler and runtime.
+   - **Reflection:** Explored the power of inspecting and interacting with object types at runtime. Learned how to dynamically access methods, properties, and constructors even if they are private.
+4. **Static Code Analysis (SonarQube)**
+   - Introduced **SonarQube** for automated code reviews.
+   - Focused on detecting "Code Smells," security vulnerabilities, and bugs in existing projects like the AddressBook or LoanBuddy systems.
+
+#### Practical Tasks:
+- Integrated testing and validation frameworks into previously built custom systems.
+
+  **Implementation Highlights:**
+  1. **AddressBook Validation (Regex):**
+     - Refactored the manual AddressBook system to include **Regex-based validation** for all inputs (ensuring Zip codes are numeric and names start with capital letters).
+  
+  2. **Unit Testing Custom DSA:**
+     - Wrote **MSTest suites** for the manual Linked Lists and Queues to verify that `Push`, `Pop`, `Enqueue`, and `Dequeue` operations don't cause index errors or null pointer exceptions.
+
+  3. **SonarQube Integration:**
+     - Ran a local SonarQube scan on a project to analyze **Cyclomatic Complexity** and identify redundant loops or unused variables.
+     - Practiced fixing "Code Smells" identified by the tool to improve overall code hygiene.
+
+  4. **Reflection Utility:**
+     - Created a small utility that uses Reflection to list all methods of a class at runtime, helping understand how frameworks like MSTest identify test methods automatically.
+
+**Key Learnings:**
+- Understood that **Testing** is as important as **Development** in a professional environment.
+- Learned how **Regex** significantly simplifies complex string validation compared to manual `if-else` loops.
+- Realized the power of **Reflection** in building flexible systems that can adapt to different classes without hard-coding.
+- Gained exposure to **SonarQube**, shifting the mindset from "it works" to "it is high-quality, maintainable code."
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
