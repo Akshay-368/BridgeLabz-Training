@@ -1013,5 +1013,93 @@ Welcome to the documentation of my training program workflow! This record will b
 - Gained exposure to **SonarQube**, shifting the mindset from "it works" to "it is high-quality, maintainable code."
 
 ---
+
+### Date: January 27, 2026 | Day: 29
+
+#### Topics Covered:
+1. **Custom Metadata Design (Annotations)**
+   - Learned how to define and apply custom **Attributes** (Annotations) to classes and methods to provide "markers" for system behavior.
+   - Practiced using `[AttributeUsage]` to control where metadata can be applied (e.g., only on methods or only on classes).
+2. **Runtime Metadata Discovery (Reflection)**
+   - Developed logic to scan assemblies at runtime, effectively "reading" the code's own structure.
+   - Used `GetMethods()`, `GetCustomAttributes()`, and `PropertyInfo` to extract metadata without knowing the class structure in advance.
+3. **Structured Data Generation (JSON)**
+   - Transitioned from simple console output to **JSON serialization**, ensuring that logs and documentation are in a machine-readable format.
+
+#### Practical Tasks:
+- Implemented two professional-grade system utilities designed to automate documentation and security auditing.
+
+  **Programs:**
+  1. **HealthCheckPro – API Metadata Validator:**
+     - **Goal:** Automate API documentation for hospital lab test systems.
+     - **Implementation:**
+       - Defined custom attributes: `[PublicAPI]` and `[RequiresAuth]`.
+       - Built a scanner that iterates through "Controller" classes using **Reflection**.
+       - Logic: If a method lacks a specific tag, it is flagged. If present, the tool extracts the method name and tag to auto-generate a summary report.
+  
+  2. **EventTracker – Auto Audit System:**
+     - **Goal:** Create an automated security log for user actions (Login, Delete, etc.).
+     - **Implementation:**
+       - Created the `[AuditTrail]` attribute to mark sensitive methods.
+       - The scanner identifies these marked methods and triggers a logging mechanism whenever they are referenced.
+       - **Output:** Generated structured **JSON logs** containing the Method Name, Timestamp, and Metadata, providing a professional audit trail for enterprise security.
+
+**Key Learnings:**
+- Realized the power of **"Code that writes code"**—using Reflection to automate boring tasks like documentation.
+- Understood how modern frameworks (like ASP.NET or Spring) use annotations to handle security and routing under the hood.
+- Mastered the ability to turn runtime objects into structured **JSON strings** for external system integration.
+- Successfully caught up on pending assignments, ensuring a solid foundation in Regex and MSTest before moving further into system architecture.
+
+---
+
+### Date: January 28, 2026 | Day: 30
+
+#### Topics Covered:
+1. **File I/O: CSV Data Handling**
+   - Learned to parse and manipulate **Comma Separated Values (CSV)** files manually.
+   - Practiced reading data streams, splitting strings by delimiters, and mapping raw text into structured objects.
+2. **Advanced Exception Handling & Business Logic**
+   - Developed custom exception classes (`InvalidFlightException`) to handle industry-specific constraints.
+   - Applied **Regex** within a business context to validate strict patterns like "FL-XXXX".
+3. **Unit Testing with NUnit**
+   - Transitioned to the **NUnit Framework**, focusing on structured test suites.
+   - Mastered the **"One Assert per Method"** rule to ensure test clarity and precise failure identification.
+   - Used `[TestFixture]` and `[Test]` attributes for test discovery.
+
+#### Practical Tasks:
+- Developed a flight validation engine and a rigorous bank account test suite.
+
+  **Programs:**
+  1. **AeroVigil – Flight & Fuel Manager:**
+     - **Goal:** Validate flight data and calculate refueling needs.
+     - **Implementation:** - Used `String.Split(':')` to parse input: `FlightNumber:FlightName:PassengerCount:CurrentFuelLevel`.
+       - **Regex Validation:** Enforced the `FL-XXXX` pattern for flight numbers.
+       - **Logic:** Verified airlines against an approved list (SpiceJet, Vistara, IndiGo, Air Arabia).
+       - **Validation:** Checked passenger counts against aircraft-specific capacities (e.g., Vistara: 615) and ensured fuel levels were within limits.
+       - **Calculation:** Output the remaining fuel required to reach the tank's max capacity.
+
+  2. **Bank Account NUnit Test Suite:**
+     - **Goal:** Create a 100% code coverage test suite for `Deposit` and `Withdraw` operations.
+     - **Test Cases:**
+       - **Valid Deposit:** Confirmed balance increases.
+       - **Negative Deposit:** Used `Assert.Throws<Exception>` to catch invalid inputs.
+       - **Valid Withdrawal:** Confirmed balance decreases correctly.
+       - **Insufficient Funds:** Validated that overdrawing triggers a specific error message.
+
+
+
+| Test Case | Method Target | Input Condition | Expected Result |
+| :--- | :--- | :--- | :--- |
+| **Success Path** | Deposit / Withdraw | Positive / Sufficient | Balance Updates |
+| **Error Path** | Deposit | Amount < 0 | Throws Exception |
+| **Error Path** | Withdraw | Amount > Balance | Throws Exception |
+
+**Key Learnings:**
+- Mastered **CSV Parsing**, a critical skill for importing large datasets into C# applications.
+- Learned the importance of **Constraint-Based Validation**: setting different rules (capacities/fuel limits) based on the object type (Flight Name).
+- Understood the rigor of **NUnit**; specifically how to test for failure (Exceptions) just as thoroughly as success.
+- Practiced the discipline of **Single Assertion testing**, which makes debugging failed tests much faster.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
