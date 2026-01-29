@@ -1101,5 +1101,37 @@ Welcome to the documentation of my training program workflow! This record will b
 - Practiced the discipline of **Single Assertion testing**, which makes debugging failed tests much faster.
 
 ---
+
+### Date: January 29, 2026 | Day: 31
+
+#### Topics Covered:
+1. **JSON Fundamentals**
+   - Studied the lightweight data-interchange format and its key-value pair structure.
+   - Understanding JSON Data Types: String, Number, Boolean, Null, Array (`[]`), and Object (`{}`).
+2. **JSON Serialization & Deserialization**
+   - **Reading (Deserializing):** Converting a JSON string from a file or API into a C# Object.
+   - **Writing (Serializing):** Converting C# objects back into JSON strings for storage or transmission.
+3. **Parsing & Navigation**
+   - Exploring libraries like `System.Text.Json` (modern .NET) or `Newtonsoft.Json`.
+   - Learned how to parse complex, nested JSON objects to extract specific data points without mapping the entire structure.
+4. **Schema Validation**
+   - Introduction to **JSON Schema**: Defining a blueprint for what a JSON file *must* look like.
+   - Learning how to validate data against a schema to ensure required fields (like `FlightNumber` or `Balance`) exist and have the correct data types before processing.
+
+#### Practical Study & Requirements:
+- Focused on transitioning the logic from previous systems (like AddressBook and AeroVigil) into a JSON-compatible format.
+- **Goals for the Day:**
+  - Create valid JSON files representing a list of `Contact` or `Flight` objects.
+  - Understand the concept of "Pretty Printing" (indented JSON) versus "Minified" JSON for network efficiency.
+  - Explore how to handle **Nullable types** and **Date formats** during the serialization process.
+
+
+
+**Key Learnings:**
+- Realized that JSON is essentially the "String representation" of the **Dictionaries and HashMaps** built manually earlier this month.
+- Understood that **Schema Validation** is the "Unit Test" for data; it prevents the system from crashing due to malformed external inputs.
+- Gained a clear perspective on the differences between CSV (flat, simple) and JSON (hierarchical, complex) and when to use each for I/O handling.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
