@@ -1133,5 +1133,47 @@ Welcome to the documentation of my training program workflow! This record will b
 - Gained a clear perspective on the differences between CSV (flat, simple) and JSON (hierarchical, complex) and when to use each for I/O handling.
 
 ---
+
+### Date: January 30, 2026 | Day: 31
+
+#### Topics Covered:
+1. **Advanced Abstract Architecture**
+   - Implemented an **Abstract Base Class** (`GoodsTransport`) to enforce a contract for specialized transport types.
+   - Mastered **Constructor Chaining** to pass data from child classes (`BrickTransport`, `TimberTransport`) back to the base protected attributes.
+   - Applied **Method Overriding** to calculate dynamic costs and select vehicles based on physical dimensions (volume vs. quantity).
+2. **String Analytics & Transformation**
+   - Developed a complex "Lexical Twist" engine focusing on **Case-Insensitive Comparisons** and **Reverse-String logic**.
+   - Practiced **Character Analysis** to filter unique vowels and consonants while strictly avoiding built-in collections.
+3. **Robust Input Validation**
+   - Used **Utility Classes** to centralize parsing logic (`parseDetails`) and data validation (Regex for Transport ID).
+   - Implemented strict error handling to stop processing when invalid characters (spaces) are detected, without forcing a system-level exit.
+
+#### Practical Tasks:
+- Developed two comprehensive systems requiring high-level algorithmic thinking and clean C# coding standards.
+
+  **Programs:**
+  1. **FutureLogistics – Automated Billing System:**
+     - **Goal:** Automate charge calculations for a transport company.
+     - **Transport Logic:**
+       - **BrickTransport:** Vehicle selection based on quantity ($<300$ for Truck, etc.). Total charge included a base price + 30% tax + vehicle fee, minus a rating-based discount.
+       - **TimberTransport:** Vehicle selection based on Surface Area ($2 \times 3.147 \times r \times l$). Charge calculated via Volume formula.
+     - **Utility Logic:** Created a `parseDetails` method to handle colon-separated strings, validating the ID format before instantiation.
+
+  2. **Lexical Twist – Word Puzzle Engine:**
+     - **Goal:** Perform divergent transformations based on string symmetry.
+     - **Path A (Reversed Words):** If Word 2 is the reverse of Word 1, the program reverses the string, lowers the case, and masks all vowels with `@`.
+     - **Path B (Non-Reversed):** If words don't match, they are concatenated and analyzed.
+     - **Analytics:** Counted vowels and consonants to determine the dominant type, then used manual iteration to find and print exactly two **unique** characters of the winning type.
+     - **Constraint Management:** Handled space-validation to ensure word integrity.
+
+
+
+**Key Learnings:**
+- Mastered the use of **Abstract Methods** to allow different child objects to have unique "selection" logic while sharing common data.
+- Learned to handle **Geometric Math** ($2 \times \pi \times r \times l$) within a business application context.
+- Refined **String Buffer/Builder** logic for reversing and masking characters manually.
+- Solidified the practice of using **Utility Classes** to keep the `Main` interface clean and focused solely on user interaction.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
