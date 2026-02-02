@@ -1175,5 +1175,82 @@ Welcome to the documentation of my training program workflow! This record will b
 - Solidified the practice of using **Utility Classes** to keep the `Main` interface clean and focused solely on user interaction.
 
 ---
+### Date: January 31, 2026 | Day: 32
+
+#### Topics Covered:
+1. **Advanced JSON Manipulation**
+   - **Serialization/Deserialization:** Converting complex C# objects and lists into formatted JSON arrays and back.
+   - **Data Merging & Filtering:** Implementing logic to merge separate JSON files and filter records based on specific criteria (e.g., `Age > 25`).
+   - **Format Interoperability:** Practiced converting data between different standards: **CSV ↔ JSON ↔ XML**.
+2. **Data Privacy & Sanitization (Censorship)**
+   - Learned the concept of "Data Redaction"—permanently masking or removing sensitive information from datasets before storage or sharing.
+3. **Schema-Based Validation**
+   - Used `Newtonsoft.Json.Schema` to enforce structural integrity, ensuring that fields like `Email` follow valid patterns during the I/O process.
+
+#### Practical Tasks:
+- Completed a comprehensive set of 15+ hands-on JSON exercises and a major capstone project involving IPL sports data.
+
+  **Major Project: IPL and Censorship Analyzer**
+  - **Objective:** Build a cross-format (JSON/CSV) data processor that applies strict privacy rules to sports records.
+  - **Core Logic:**
+    - **Team Masking:** Developed a `MaskTeamName()` utility that identifies team names and replaces specific segments with `***`.
+    - **Player Redaction:** Implemented a global redaction rule to replace the `player_of_match` field with the constant `REDACTED`.
+  - **Multi-Format Pipeline:**
+    - **Reader:** Built a unified reader to ingest both `.json` and `.csv` versions of match data.
+    - **Transformer:** Applied the censorship rules to the in-memory object list.
+    - **Writer:** Generated fresh output files (`censored_ipl.json` and `censored_ipl.csv`) reflecting the sanitized state.
+
+  **JSON Skill Drill Highlights:**
+  - Merged two distinct student database files into a single JSON object.
+  - Successfully parsed a JSON blob to extract specific keys/values for a summary report.
+  - Implemented a database-to-JSON exporter logic simulation.
+
+
+
+**Key Learnings:**
+- Mastered the ability to handle **Heterogeneous Data Sources**—reading from CSV and outputting to JSON seamlessly.
+- Understood that **Data Transformation** is a multi-step process: Parse → Filter/Transform → Validate → Write.
+- Gained hands-on experience with **Schema Validation**, realizing that validating an Email at the JSON level is just as important as validating it in the UI.
+- Effectively used **String Manipulation** (like `.Replace()` or Regex) within the context of structured data files to achieve the "Censorship" requirement.
+
+---
+
+### Date: February 2, 2026 | Day: 33
+
+#### Topics Covered:
+1. **Software Design Principles (The Foundation)**
+   - **SOLID:** Mastered the five core principles (Single Responsibility, Open/Closed, Lisket Substitution, Interface Segregation, and Dependency Inversion) to ensure code is robust and easy to scale.
+   - **DRY (Don't Repeat Yourself):** Focused on eliminating code redundancy by creating reusable methods and utility classes.
+   - **KISS (Keep It Simple, Stupid):** Prioritizing clarity over unnecessary complexity in system design.
+2. **Design Patterns (Creational, Structural, Behavioral)**
+   - Explored 10 essential patterns, including:
+     - **Singleton:** Ensuring a class has only one instance (perfect for Logger or Database connections).
+     - **Factory:** Decoupling object creation from the main logic.
+     - **Observer:** Enabling a subscription mechanism to notify multiple objects about events.
+3. **Advanced C# Functional Concepts**
+   - **Delegates & Events:** Understood how to pass methods as arguments and build event-driven architectures.
+   - **Lambda Expressions:** Using `=>` to write concise, anonymous functions for filtering and processing data.
+4. **Asynchronous Programming (Multi-Programming)**
+   - **Async/Await:** Learned how to perform non-blocking operations, essential for I/O and Network calls.
+   - **Logging & Lifecycle:** Implemented structured logging to track when a process **Starts** and **Stops**, capturing the execution flow of background tasks.
+
+#### Practical Application:
+- **Mini-Project Refactoring:** Integrated these professional standards into the existing system (like the AddressBook or IPL Analyzer).
+
+  **Implementation Highlights:**
+  - **Async Logging:** Created an asynchronous logging service that writes system events to a file without freezing the User Interface.
+  - **Lambda Integration:** Replaced bulky `foreach` loops in the IPL Analyzer with concise Lambda queries for filtering teams and players.
+  - **Singleton Pattern:** Applied the Singleton pattern to the "Settings" and "Database Connection" modules of the project to prevent resource leaks.
+  - **Event-Driven UI:** Used Delegates and Events to trigger notifications whenever a record is successfully censored or a file is saved.
+
+
+
+**Key Learnings:**
+- Realized that **SOLID** is not just a theory; it's a blueprint for writing code that doesn't break when requirements change.
+- Understood that **Async/Await** is vital for modern applications to remain responsive while handling heavy I/O tasks.
+- Gained a "design-first" mindset—thinking about *how* classes should interact before writing the first line of code.
+- Learned the importance of **Logging** as the "black box" of an application, especially when debugging multi-threaded processes.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
