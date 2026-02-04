@@ -1252,5 +1252,78 @@ Welcome to the documentation of my training program workflow! This record will b
 - Learned the importance of **Logging** as the "black box" of an application, especially when debugging multi-threaded processes.
 
 ---
+### Date: February 3, 2026 | Day: 34
+
+#### Topics Covered:
+1. **Domain-Specific Exception Handling**
+   - Implemented a custom exception class `RobotSafetyException` inheriting from the base `Exception` class.
+   - Practiced **Guard Clauses**: Validating inputs (Precision, Density, State) at the very beginning of the method to prevent invalid calculations.
+2. **Business Logic & Formula Implementation**
+   - Translated industrial safety requirements into a mathematical model using conditional logic and constant factors.
+   - **Case-Sensitivity Management:** Ensuring the `machineryState` strictly matches "Worn", "Faulty", or "Critical".
+3. **Architecture & Clean Code**
+   - Followed the **Single Responsibility Principle (SRP)**: The `RobotHazardAuditor` class is solely responsible for calculation, while the `Program` class handles user interaction.
+   - Practiced **Graceful Error Handling**: Using `try-catch` blocks to capture and display specific safety messages without crashing the application.
+
+#### Practical Tasks:
+- Developed the **Factory Robot Hazard Analyzer**, a system to calculate safety risks in a manufacturing environment.
+
+  **Implementation Details:**
+  - **Custom Exception:** `RobotSafetyException` designed to carry specific error messages to the `Main` method.
+  - **Validation Logic:**
+    - `armPrecision`: Must be $0.0 \leq x \leq 1.0$.
+    - `workerDensity`: Must be $1 \leq x \leq 20$.
+    - `machineryState`: Must be one of the three defined states (case-sensitive).
+  - **The Risk Formula:**
+    - Integrated the Machine Risk Factors ($Worn=1.3$, $Faulty=2.0$, $Critical=3.0$).
+    - Formula: $$Hazard Risk = ((1.0 - armPrecision) \times 15.0) + (workerDensity \times machineRiskFactor)$$
+
+  **Results:**
+  - **Success Path:** Input (0.5, 10, "Critical") yields a score of **37.5**.
+  - **Error Path:** Any out-of-range input triggers the custom exception, displaying the exact validation error (e.g., "Error: Worker density must be 1-20").
+
+**Key Learnings:**
+- Mastered the pattern of **Throwing vs. Catching**: The Auditor throws the specific safety error, while the UI catches and presents it to the user.
+- Understood the importance of **Case Sensitivity** in industrial states—"Critical" is not the same as "critical" in high-stakes logic.
+- Applied the **DRY (Don't Repeat Yourself)** principle by centralizing all risk logic within a single method.
+- Realized that in professional systems, **Validation is 50% of the code**; the actual formula is often simple once the data is guaranteed to be clean.
+
+---
+### Date: February 4, 2026 | Day: 35
+
+#### Topics Covered:
+1. **Relational Database Management System (RDBMS)**
+   - **Schema Design:** Mastered **ER Diagrams** and **Normalization** (1NF, 2NF, 3NF) to eliminate data redundancy.
+   - **SQL Command Toolkit:**
+     - **DDL:** `CREATE`, `ALTER`, `DROP` (Auto-committed).
+     - **DML/DQL:** `INSERT`, `UPDATE`, `DELETE`, and the difference between **Selection** (filtering rows via `WHERE`) vs. **Projection** (choosing columns via `SELECT`).
+     - **TCL:** `COMMIT` and `ROLLBACK` for maintaining data integrity.
+   - **Advanced Querying:** Grouping and ordering data using `GROUP BY`, `HAVING`, and `ORDER BY`.
+
+2. **Parallel Programming & Performance Optimization**
+   - **Multi-Threading:** Using `Thread` and `Task` to perform concurrent DB operations.
+   - **Synchronization:** Implementing locks and connection counters to prevent "Race Conditions" when multiple threads hit the DB.
+   - **Performance Benchmarking:** Recording "Start and Stop" timestamps to calculate execution time (ms) to prove the efficiency of threaded vs. non-threaded operations.
+
+#### Practical Tasks:
+- Developed the **Employee Payroll Multi-Threaded System**, integrating MS SQL/MySQL with ADO.NET.
+
+  **Project Milestones (UC 1 - 6):**
+  - **UC 1 (Transactional Integrity):** Added multiple employees to the `payroll_service` DB using **ADO.NET Transactions** to ensure that if one part of the insert fails, the whole operation rolls back.
+  - **UC 2-4 (Threading & Concurrency):** - Refactored the insertion logic to run on separate threads. 
+    - Demonstrated a significant performance boost compared to sequential processing.
+    - Used **Console Logs** and **Connection Counters** to visualize thread execution.
+  - **UC 5 (Dependent Threading):** Handled complex relational inserts. Since `payroll_details` depends on `employee_id`, I synchronized threads to ensure the parent record exists before the child record is inserted.
+  - **UC 6 (Mass Updates):** Implemented multi-threaded salary updates across multiple tables (`employee_payroll` and `payroll_details`), ensuring data consistency between the DB and the C# Object Model.
+
+
+
+**Key Learnings:**
+- **TDD (Test Driven Development):** Used **MSTest** to write failing tests first, then developed the code to pass them, ensuring 100% functional reliability.
+- **Thread Safety:** Learned that "Faster" isn't always "Better" if data gets corrupted—**Synchronization** is key when threads share a database connection.
+- **ACID Properties:** Understood how Transactions ensure Atomicity, Consistency, Isolation, and Durability in the Payroll system.
+- **Relational Logic:** Mastered the use of **Joins** to pull data across normalized tables.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
