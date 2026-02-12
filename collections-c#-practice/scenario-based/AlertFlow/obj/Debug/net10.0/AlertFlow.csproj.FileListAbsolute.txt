@@ -1,0 +1,15 @@
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\obj\Debug\net10.0\NotifyHub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\obj\Debug\net10.0\NotifyHub.AssemblyInfoInputs.cache
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\obj\Debug\net10.0\NotifyHub.AssemblyInfo.cs
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\obj\Debug\net10.0\NotifyHub.csproj.CoreCompileInputs.cache
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\obj\Debug\net10.0\NotifyHub.sourcelink.json
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\bin\Debug\net10.0\NotifyHub.exe
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\bin\Debug\net10.0\NotifyHub.deps.json
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\bin\Debug\net10.0\NotifyHub.runtimeconfig.json
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\bin\Debug\net10.0\NotifyHub.dll
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\bin\Debug\net10.0\NotifyHub.pdb
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\obj\Debug\net10.0\NotifyHub.dll
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\obj\Debug\net10.0\refint\NotifyHub.dll
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\obj\Debug\net10.0\NotifyHub.pdb
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\obj\Debug\net10.0\NotifyHub.genruntimeconfig.cache
+C:\Users\mrrea\Desktop\BridgeLabz-Training\csharp-collections-practice\scenario-based\NotifyHub\obj\Debug\net10.0\ref\NotifyHub.dll
