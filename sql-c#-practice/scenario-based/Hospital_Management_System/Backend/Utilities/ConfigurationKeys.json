@@ -1,0 +1,10 @@
+{
+  "AdminConfig": {
+    "ManagerKey": "HOSPITAL_MANAGER_2026",
+    "KeyVersion": "1.0",
+    "KeyAlgorithm": "SHA256",
+    "KeySize": 256,
+    "Iterations": 100000,
+    "ActualKey" : "8d2c2a4d-0c9f-4f7b-a5f1-8a2e8e0b4d2c#Light299,792,458M/Second"
+  }
+}
