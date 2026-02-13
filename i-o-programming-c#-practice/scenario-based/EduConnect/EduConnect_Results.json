@@ -1,0 +1,32 @@
+[
+  {
+    "Email": "admin@blitz.edu",
+    "IsValid": true,
+    "ProcessedAt": "13 February 2026 22:33:29"
+  },
+  {
+    "Email": "dave#123@inbox.com",
+    "IsValid": false,
+    "ProcessedAt": "13 February 2026 22:33:29"
+  },
+  {
+    "Email": "john.doe@gmail.com",
+    "IsValid": true,
+    "ProcessedAt": "13 February 2026 22:33:29"
+  },
+  {
+    "Email": "raju#123@inbox.com",
+    "IsValid": false,
+    "ProcessedAt": "13 February 2026 22:33:29"
+  },
+  {
+    "Email": "megha_r92@outlook.in",
+    "IsValid": true,
+    "ProcessedAt": "13 February 2026 22:33:29"
+  },
+  {
+    "Email": "admin@blitz.com",
+    "IsValid": true,
+    "ProcessedAt": "13 February 2026 22:33:29"
+  }
+]

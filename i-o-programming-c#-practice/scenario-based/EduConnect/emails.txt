@@ -1,0 +1,6 @@
+john.doe@gmail.com
+megha_r92@outlook.in
+admin@blitz.edu
+raju#123@inbox.com
+admin@blitz.com
+dave#123@inbox.com
