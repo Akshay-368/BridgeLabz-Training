@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart_City_System", "Smart_City_System\Smart_City_System.csproj", "{AEEAFCC5-28FB-4E2C-B3A9-2700E52B37F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hospital_Management_System", "Hospital_Management_System", "{61DA2A13-CE8A-4269-B8B3-31C047AEFC62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseConnection", "Hospital_Management_System\Backend\DatabaseConnection.csproj", "{2843BE20-1992-4A66-9BCA-E0E654748E98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEEAFCC5-28FB-4E2C-B3A9-2700E52B37F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEEAFCC5-28FB-4E2C-B3A9-2700E52B37F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEEAFCC5-28FB-4E2C-B3A9-2700E52B37F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEEAFCC5-28FB-4E2C-B3A9-2700E52B37F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2843BE20-1992-4A66-9BCA-E0E654748E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2843BE20-1992-4A66-9BCA-E0E654748E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2843BE20-1992-4A66-9BCA-E0E654748E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2843BE20-1992-4A66-9BCA-E0E654748E98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2843BE20-1992-4A66-9BCA-E0E654748E98} = {61DA2A13-CE8A-4269-B8B3-31C047AEFC62}
+	EndGlobalSection
+EndGlobal
