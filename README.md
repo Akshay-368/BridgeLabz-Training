@@ -1325,5 +1325,32 @@ Welcome to the documentation of my training program workflow! This record will b
 - **Relational Logic:** Mastered the use of **Joins** to pull data across normalized tables.
 
 ---
+
+### Date: February 5, 2026 | Day: 36
+
+#### Topics Covered:
+1. **Advanced MSSQL Programming**
+   - **Stored Procedures & UDFs:** Learned to move business logic from the application layer into the database for performance and security.
+   - **Views & Abstraction:** Created virtual tables to simplify complex joins and provide data security for different user roles.
+   - **Triggers & Cursors:** Implemented triggers for automated auditing and cursors for complex row-by-row data processing.
+   - **Indexing:** Studied how to optimize search performance on frequently queried columns (like Patient IDs or Citizen Names).
+
+2. **Project 1: Health Clinic Management System (DB Focus)**
+   - **Schema Design:** Designed a normalized database across 6 modules (Patient, Doctor, Appointment, Visit, Billing, Admin).
+   - **Key Logic (UC 1-6):**
+     - **Patient/Doctor Management:** Handled "Soft Deletes" and uniqueness constraints.
+     - **Appointment Scheduling:** Implemented "Availability Checks" using `GROUP BY` and `COUNT` to prevent overbooking.
+     - **Billing & Revenue:** Used Aggregate Functions (`SUM`, `HAVING`) to generate itemized bills and revenue reports.
+     - **Auditing:** Developed Triggers to log every `INSERT/UPDATE/DELETE` into a system audit table.
+
+3. **Project 2: TechVille Smart City (Architecture Focus)**
+   - **Phase 1 (The Foundation):** Initiated Modules 1–5, focusing on basic I/O, logical constructs, and memory management (JVM/Arrays).
+   - **Strategic Goal:** To build a system that evolves from simple variables to complex Generic Containers (`CityContainer<T>`), Design Patterns, and I/O Streams.
+
+**Key Learnings for the Day:**
+-Database-First vs. Code-First: Learned how to balance logic between the SQL Server (Stored Procedures) and the C# Application (Modules).
+-Memory Optimization: Understanding JVM/CLR memory management to handle the "Smart Citizen Database" efficiently as it grows from 1,000 to 100,000+ records.
+-Data Integrity: Using Foreign Keys and Transactions in the Clinic App to ensure that a visit cannot exist without a valid patient and doctor.
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
