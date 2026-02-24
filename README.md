@@ -1352,5 +1352,201 @@ Welcome to the documentation of my training program workflow! This record will b
 -Memory Optimization: Understanding JVM/CLR memory management to handle the "Smart Citizen Database" efficiently as it grows from 1,000 to 100,000+ records.
 -Data Integrity: Using Foreign Keys and Transactions in the Clinic App to ensure that a visit cannot exist without a valid patient and doctor.
 ---
+
+---
+
+### Date: February 6, 2026 | Day: 37
+
+#### Topics Covered:
+1. **Project Continuation & Implementation**
+   - Focused entirely on progressing the ongoing core project development.
+   - Continued integrating previously learned concepts such as OOP, Data Structures, Exception Handling, and Modular Architecture.
+   - Improved internal method structures to enhance readability and maintainability.
+
+2. **Code Refactoring & Optimization**
+   - Reviewed existing modules to identify redundant logic and optimize performance.
+   - Strengthened separation of concerns by ensuring clear responsibility boundaries between classes.
+   - Enhanced validation logic to prevent unexpected runtime errors.
+
+3. **Workflow Discipline & Git Management**
+   - Maintained a structured development flow by working on isolated components before merging changes.
+   - Ensured consistent commit practices with meaningful commit messages.
+   - Verified that all changes were properly tested before integration.
+
+---
+
+#### Practical Tasks:
+- Continued active development of the primary project module.
+- Refined business logic and ensured alignment with previously defined Use Cases.
+- Conducted manual testing of newly implemented features.
+- Resolved minor edge cases and stability issues discovered during testing.
+
+---
+
+#### Key Learnings:
+- Reinforced the importance of iterative development in large-scale systems.
+- Understood how small refactoring improvements significantly enhance long-term maintainability.
+- Gained deeper confidence in independently extending an existing codebase without disrupting its structure.
+- Strengthened practical understanding of applying multiple C# concepts cohesively within one evolving project.
+
+---
+
+---
+
+### Date: February 9, 2026 | Day: 38
+
+#### Topics Covered:
+1. **Ongoing Project Development**
+   - Continued structured implementation of the primary project modules.
+   - Focused on expanding existing features while preserving architectural consistency.
+   - Ensured previously implemented logic remained stable after new additions.
+
+2. **Incremental Enhancement & Stability Improvements**
+   - Strengthened validation mechanisms across user input handling.
+   - Improved method modularity to reduce code duplication.
+   - Reviewed object relationships to confirm proper encapsulation and responsibility segregation.
+
+3. **Testing & Debugging**
+   - Conducted iterative manual testing after each logical enhancement.
+   - Identified and resolved edge cases affecting boundary conditions.
+   - Verified data integrity across interconnected components.
+
+4. **Version Control Discipline**
+   - Maintained structured commits reflecting logical milestones.
+   - Ensured clean merges without breaking existing functionality.
+   - Preserved stable build state before pushing updates.
+
+---
+
+#### Practical Tasks:
+- Extended current project functionality by refining core logic.
+- Performed structured debugging sessions to eliminate inconsistencies.
+- Validated system behavior under multiple input scenarios.
+- Confirmed alignment with previously defined Use Cases and architectural goals.
+
+---
+
+#### Key Learnings:
+- Strengthened understanding of iterative software development cycles.
+- Gained confidence in extending complex systems without introducing regressions.
+- Improved debugging efficiency through systematic testing strategies.
+- Reinforced the importance of clean Git history and modular development practices.
+
+---
+---
+
+### Date: February 10, 2026 | Day: 39
+
+#### Session Type:
+**M1 Mock Examination – .NET**
+
+---
+
+## Question 1: City Management System
+
+### Scenario:
+CityAssist is a municipal platform designed to manage citizen-reported issues such as road damage, water leakage, power failure, and traffic signal malfunction.
+
+Each issue undergoes validation, department assignment, processing, activity logging, and status updates.
+
+### Core Requirements:
+- Implement OOP principles to model issues.
+- Use Collections to manage multiple issue records.
+- Accept user input and validate using Regex.
+- Assign departments dynamically based on issue type.
+- Ensure easy extensibility for adding new issue types.
+
+### Functional Implementation:
+- Unique Issue ID
+- Citizen Name
+- Location
+- Creation Timestamp
+- Identify issues reported within the last 24 hours
+- Group issues by department
+- Identify department with highest issue count
+- Multithreaded processing for simultaneous issue handling
+- Activity logging with timestamp and severity level
+
+### Error Handling & Constraints:
+- Handle invalid inputs using Regex validation
+- Manage mapping failures and processing exceptions
+- Ensure one issue failure does not stop processing of others
+- Maintain loose coupling and separation of concerns
+- Design for scalability and extensibility
+
+---
+
+## Question 2: Corporate Training & Evaluation Platform
+
+### Scenario:
+Skill Bridge is an internal employee training management system for tracks such as backend development, frontend development, database systems, and cloud fundamentals.
+
+### Core Requirements:
+- Model Participants and Training Tracks using OOP
+- Store records using Collections
+- Validate Employee ID and Name using Regex
+- Prevent duplicate enrollments
+- Support flexible evaluation logic per training track
+
+### Functional Implementation:
+- Unique Employee ID
+- Name
+- Training Track
+- Enrollment Date
+- Progress Status
+- Retrieve participants within a date range
+- Group by training track
+- Identify track with highest failure rate
+- Multithreaded evaluations without blocking enrollment
+- Activity logging (enrollment, evaluation start/end, updates, failures)
+
+### Error Handling & Constraints:
+- Handle invalid enrollments and evaluation failures
+- Ensure independent evaluation processing
+- Maintain modular architecture
+- Ensure loose coupling and scalability
+
+---
+
+## Question 3: Application Activity Archival System
+
+### Scenario:
+LogVault is a logging utility designed to capture and archive high-volume application activity records reliably.
+
+### Core Requirements:
+- Create Activity Record class with validation annotations
+- Use File I/O streams for sequential writing
+- Handle large-scale record writing efficiently
+- Prevent faulty records from blocking valid ones
+
+### Functional Implementation:
+- Record ID
+- Source Module
+- Severity Level
+- Message
+- Auto-generated Timestamp
+- Validation for mandatory fields and severity constraints
+- Read records back for analysis
+- Filter by severity
+- Group by source module
+- Identify most frequent error-generating module
+
+### Exception Handling & Verification:
+- Handle corrupted formats and read/write interruptions
+- Ensure valid records continue processing despite failures
+- Implement MSTest-style automated tests
+- Validate record structure, reading logic, and analytical correctness
+- Ensure repeatable and isolated test execution
+
+---
+
+#### Key Takeaways from Mock Test:
+- Strengthened understanding of enterprise-level architecture design.
+- Applied OOP, Collections, Regex, Multithreading, File I/O, and Exception Handling in real-world scenarios.
+- Reinforced the importance of loose coupling and separation of responsibilities.
+- Gained experience in designing scalable and extensible systems under exam conditions.
+- Improved structured thinking for handling complex multi-module systems.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
