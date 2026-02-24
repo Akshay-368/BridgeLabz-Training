@@ -2035,5 +2035,75 @@ Used:
 - Strengthened backend development fundamentals.
 
 ---
+
+### Date: February 18, 2026 | Day: 46
+
+#### Session Focus:
+**iMocha Mock Test – Data Parsing & Regex Validation**
+
+
+## Mock Test Topics Covered
+
+### 1. Raw Data Transformation into Structured Objects
+
+**Scenario:**
+Transform unstructured delimited string input into structured business entities.
+
+Example Input:
+"ID, Name, Department, Salary"
+
+### Requirements:
+
+- Parse input string using delimiters.
+- Instantiate a business class (e.g., Employee).
+- Populate object properties using getters/setters.
+- Perform proper data type conversions:
+  - int.Parse()
+  - decimal.Parse()
+- Ensure clean object initialization and state management.
+
+### Concepts Applied:
+
+- String manipulation
+- Object instantiation
+- Encapsulation
+- Data type conversion
+- Structured data modeling
+
+### 2. Advanced String Validation Using Regex
+
+**Validation Rules:**
+
+- Minimum 3 characters
+- Must start with an alphabet
+- Must end with a numeric digit
+- Any characters allowed in between
+
+### Expected Industry Approach:
+
+Instead of procedural validation using:
+- Length checks
+- char.IsLetter()
+- char.IsDigit()
+
+Used Regular Expressions from:
+System.Text.RegularExpressions
+
+Sample Pattern: @[A-Za-z].{1,}[0-9]$
+
+This ensures:
+- Single-pass validation
+- High performance
+- Clean, maintainable input sanitization
+
+
+## Key Learnings
+
+- Strengthened ability to convert raw input into structured domain models.
+- Improved understanding of property-based object initialization.
+- Reinforced importance of Regex in enterprise-level validation.
+- Gained confidence in handling structured parsing under exam conditions.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
