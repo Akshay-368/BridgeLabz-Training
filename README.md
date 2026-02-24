@@ -1949,5 +1949,91 @@ Continued progress on previously assigned multi-module projects while implementi
 - Learned to coordinate database state with in-memory caching safely.
 
 ---
+
+
+### Date: February 17, 2026 | Day: 45
+
+#### Session Focus:
+**ASP.NET Core Basics & Project Continuation**
+
+
+## 1. ASP.NET Core Fundamentals
+
+Covered core concepts of ASP.NET Core as a modern, cross-platform framework used to build:
+
+- Web Applications  
+- REST APIs  
+- Microservices  
+- Cloud-based Applications  
+
+### Key Concepts Studied:
+
+- ASP.NET vs ASP.NET Core (Performance, Cross-Platform, Built-in DI)
+- Project Structure (Controllers, Models, Program.cs, appsettings.json)
+- Minimal Hosting Model (.NET 6+)
+- Kestrel Web Server
+- Middleware Pipeline
+- Routing Mechanism
+
+
+## 2. ASP.NET Web API & REST
+
+### REST Principles:
+- Stateless communication
+- HTTP methods (GET, POST, PUT, DELETE)
+- Resource-based routing
+- JSON responses
+
+### HTTP Concepts:
+- Request & Response structure
+- Status Codes (200, 201, 400, 404, 500)
+- IActionResult usage (Ok, NotFound, BadRequest, Created)
+
+
+## 3. MVC Pattern
+
+- Model → Data representation  
+- View → UI  
+- Controller → Request handling  
+
+Understood request flow:
+Client → Controller → Business Logic → Database → Response
+
+
+## 4. CRUD Implementation Practice
+
+Implemented:
+
+- GET (All & By Id)
+- POST (Create)
+- PUT (Update)
+- DELETE (Remove)
+
+Used:
+- Routing attributes
+- Model binding
+- IActionResult responses
+- In-memory collections for simulation
+
+
+## 5. Middleware & API Communication
+
+- Understood middleware execution pipeline.
+- Implemented basic custom middleware.
+- Learned API consumption using HttpClient.
+
+## 6. Ongoing Work
+
+- Continued development of previously assigned system-level projects.
+- Began planning and structuring a newly assigned major project to be developed incrementally.
+
+#### Key Learnings:
+
+- Gained foundational understanding of ASP.NET Core architecture.
+- Understood RESTful API design principles.
+- Learned request-response lifecycle in web applications.
+- Strengthened backend development fundamentals.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
