@@ -1605,5 +1605,349 @@ LogVault is a logging utility designed to capture and archive high-volume applic
 - Strengthened habit of balancing development with systematic revision.
 
 ---
+
+### Date: February 12, 2026 | Day: 41
+
+#### Session Focus:
+**NotifyHub – Concurrent Notification Processing System**
+(Multithreading, Async Programming, Collections, OOP – Basic & Advanced, Annotations)
+
+
+## Project Overview
+
+NotifyHub is a concurrent notification processing system designed to handle continuous notification generation (Email, SMS, App Alerts) while ensuring responsiveness, prioritization, and safe parallel execution.
+
+The system must:
+- Process notifications efficiently
+- Remain responsive under increasing load
+- Support concurrent sending
+- Handle failures gracefully without blocking other operations
+
+## Core Design Objectives
+
+- Apply OOP principles (basic & advanced)
+- Use collections for in-memory storage
+- Implement multithreading and async/await
+- Enforce validation using annotations/attributes
+- Maintain loose coupling and extensibility
+
+
+## 1. Notification Representation
+
+Each notification contains:
+- Notification ID
+- Recipient
+- Message
+- Priority
+- Created Time
+
+### Validation Rules:
+- Notification ID must always be present
+- Recipient must follow predefined format (Regex-based validation)
+- Priority must fall within allowed range
+
+Validation rules are declared using annotations/attributes within the model itself to avoid repetitive validation logic.
+
+
+## 2. Notification Intake System
+
+- Notifications are added to an in-memory collection.
+- Invalid notifications are rejected with clear error messages.
+- Rejection of one notification does not impact others.
+- Designed to scale efficiently with increasing notification volume.
+
+
+## 3. Concurrent Processing Architecture
+
+The system ensures:
+- Sending does not block intake operations.
+- Multiple notifications are processed simultaneously.
+- Failures in one notification do not interrupt others.
+
+Implemented using:
+- Multithreading
+- Task-based asynchronous programming
+- Synchronization mechanisms for thread safety
+
+
+## 4. Processing Behavior
+
+- Sending logic is selected dynamically based on notification type.
+- Higher-priority notifications are processed first.
+- Notification status is safely updated after sending.
+- Strategy-based design allows flexible extension for new delivery mechanisms.
+
+
+
+## 5. Failure Handling & Reliability
+
+Possible failure scenarios:
+- Invalid data
+- Temporary sending failures
+- Unexpected runtime exceptions
+
+System guarantees:
+- Failure capture with proper exception handling
+- Accurate status updates
+- Continued processing of remaining notifications
+
+
+## 6. Architectural Design Principles
+
+- Clear separation between:
+  - Notification Model
+  - Sending Logic
+  - Processing Coordinator
+- Avoidance of hard-coded dependencies
+- Extensible structure for adding new notification types
+- Safe concurrency handling
+
+
+## Concepts Applied
+
+- OOP (Encapsulation, Abstraction, Polymorphism, Interfaces)
+- Advanced OOP (Strategy Pattern, Separation of Concerns)
+- Collections Framework
+- Multithreading
+- Asynchronous Programming (async/await, Task)
+- Annotations / Attributes for validation
+- Exception Handling
+- Concurrency & Synchronization
+
+
+
+#### Parallel Work:
+Continued development of previously assigned projects while implementing NotifyHub, ensuring consistent progress across multiple system modules.
+
+
+#### Key Learnings:
+- Strengthened understanding of concurrent system design.
+- Improved ability to separate processing logic from data representation.
+- Gained hands-on experience with async programming and thread coordination.
+- Learned to prioritize system responsiveness under load.
+- Reinforced architectural thinking for scalable system development.
+
+---
+---
+
+### Date: February 13, 2026 | Day: 42
+
+#### Session Focus:
+**Email Validator – College Admission Portal (EduConnect)**
+(Multithreading, File I/O, Annotations, Regex, Exception Handling)
+
+## Project Overview
+
+Designed a backend validation module for **EduConnect**, an online college admission portal used for student registration across universities.
+
+The system ensures accurate email validation during registration to prevent:
+- Typographical errors
+- Spam entries
+- Invalid formats
+- Duplicate-like malformed inputs
+
+This module emphasizes input validation reliability and modular design.
+
+## Core Concepts Applied
+
+- Regex (Pattern Matching)
+- Exception Handling
+- Modular Method Design
+- Annotations / Attributes
+- Multithreading (for scalable validation scenarios)
+- File I/O Handling (optional logging / validation record storage)
+
+## Functional Requirements
+
+The system must:
+
+- Accept email input during registration.
+- Validate email format using Regex.
+- Accept only properly structured emails:
+  - Format: `username@domain.extension`
+  - Username: Alphanumeric, dots (.), underscores (_)
+  - Domain: Alphabetic (gmail, yahoo, blitz, etc.)
+  - Extension: .com, .in, .org, .edu, etc.
+
+
+## Sample Regex Used
+
+```csharp
+string regex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$";
+```
+
+---
+
+### Date: February 14, 2026 | Day: 43
+
+#### Session Focus:
+**Comprehensive Revision & Project Completion**
+
+
+## 1. Technical Revision
+
+Revisited all major concepts covered so far to strengthen conceptual clarity and implementation confidence.
+
+### Topics Revised:
+- OOP Principles (Encapsulation, Abstraction, Inheritance, Polymorphism)
+- Advanced OOP & Design Separation
+- Collections Framework
+- Regex & Pattern Matching
+- Exception Handling Strategies
+- Multithreading & Concurrency
+- Asynchronous Programming (async/await, Task)
+- File I/O Operations
+- Annotations / Attributes
+- Database Integration & Data Integrity Concepts
+
+Focused on reinforcing both theoretical understanding and practical application within previously developed systems.
+
+## 2. Project Completion & Refinement
+
+Worked toward completing all previously assigned projects, including:
+
+- City Management System
+- Corporate Training & Evaluation Platform
+- Application Activity Archival System
+- NotifyHub – Concurrent Notification Processing
+- Email Validator – College Admission Portal
+
+### Completion Activities:
+- Finalized pending modules.
+- Resolved edge-case bugs.
+- Improved validation mechanisms.
+- Strengthened exception handling.
+- Ensured clean separation of layers (Presentation, Business Logic, Data Access).
+- Conducted structured testing to verify system stability.
+
+## 3. Code Quality & Stability Improvements
+
+- Refactored redundant logic for better maintainability.
+- Verified thread safety in concurrent modules.
+- Reviewed modular method design for clarity.
+- Ensured consistent naming conventions and structure.
+- Confirmed proper database interactions and validation rules.
+
+
+#### Key Learnings:
+
+- Understood the importance of consolidation after intensive development.
+- Improved ability to connect multiple concepts across projects.
+- Strengthened debugging and refinement skills.
+- Gained confidence in handling multi-module system architecture.
+- Reinforced disciplined development and revision habits.
+
+---
+
+---
+
+### Date: February 16, 2026 | Day: 44
+
+#### Session Focus:
+**Bank Transaction Processing System**
+(SQL Transactions, Concurrency Control, Atomicity, Multithreading, In-Memory Caching)
+
+
+## Project Overview
+
+Designed a transaction processing system to simulate how a bank handles high-volume transactions while ensuring:
+
+- Atomicity
+- Consistency
+- Concurrency Safety
+- Rollback on Failure
+- Prevention of Race Conditions
+
+The system simulates multiple parallel withdrawals on the same account while maintaining balance integrity.
+
+## Database Design
+
+### Tables Created:
+
+**Accounts**
+- AccountId
+- HolderName
+- Balance
+
+**Transactions**
+- TransactionId
+- AccountId
+- Amount
+- Type (Credit / Debit)
+- CreatedDate
+
+Ensured proper relational integrity between Accounts and Transactions.
+
+## Core Functional Requirements
+
+### 1. Transaction Processing
+- Insert transaction records into Transactions table.
+- Update account balance accordingly.
+- Ensure operations are wrapped within database transactions to maintain atomicity.
+
+### 2. Atomic Operations
+- Used SQL transaction handling to:
+  - Commit successful operations
+  - Rollback on failure
+- Ensured balance updates and transaction inserts occur together or not at all.
+
+
+## Concurrency Simulation
+
+### Parallel Execution:
+- Simulated 50 parallel withdrawal operations on the same account.
+- Implemented multithreading to replicate real-world banking load conditions.
+
+### Race Condition Prevention:
+- Applied synchronization mechanisms.
+- Ensured balance checks and deductions occur safely.
+- Prevented inconsistent balance states under concurrent access.
+
+
+## In-Memory Account Cache
+
+- Maintained account data using:
+  `Dictionary<int, Account>`
+- Reduced frequent database reads.
+- Ensured synchronization between cache and database state.
+- Handled concurrency safely within the in-memory layer.
+
+---
+
+## Testing & Validation
+
+### Test Cases Implemented:
+
+- Insufficient balance scenario validation.
+- Concurrent withdrawal stress test.
+- Rollback verification on simulated failure.
+- Validation that failed transactions do not corrupt account balance.
+
+
+## Concepts Applied
+
+- SQL Transaction Management (Commit / Rollback)
+- ACID Principles (Atomicity Focus)
+- Multithreading
+- Concurrency Control
+- Race Condition Prevention
+- In-Memory Data Caching
+- Exception Handling
+- Structured Testing
+
+
+#### Parallel Development:
+Continued progress on previously assigned multi-module projects while implementing this transaction processing simulation.
+
+
+#### Key Learnings:
+
+- Strengthened understanding of atomic database operations.
+- Gained practical insight into race condition prevention.
+- Improved ability to design safe concurrent systems.
+- Understood importance of transactional integrity in financial systems.
+- Learned to coordinate database state with in-memory caching safely.
+
+---
 This marks the beginning of the training program with a strong foundation. Future updates will include more advanced topics, practical tasks, and learnings. Stay tuned!
 
