@@ -47,6 +47,8 @@ Create Table SystemAuditLogs (
     NewValue NVARCHAR (MAX) Null -- New value after the change, which can be null for Delete actions
 );
 GO
+-- For null columns to get integrated with Check condition you can aslo do
+-- CHECK (ColumnName IS NULL OR ColumnName IN ('Thing1', 'Thing2'))
 
 ----------------------------------------------------------------------------------------------------------------
 -- Creating a trigger on the table Contacts
