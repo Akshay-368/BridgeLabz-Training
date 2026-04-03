@@ -1,0 +1,149 @@
+# Leetcode - 19. Remove Nth Node From End of List
+
+# Solution :-
+
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+
+        # Since in this question we have to remove the node from the end and for travelling through linked list we are totally dependent     
+        # on the next pointers and can travel in one straight ( ahead ) direction only , so first find the element to be deleted . 
+        # For example if we have a list of [ 1 , 2 , 3 ,4  , 5 ] and we need to remove the second last element from the end that is 3 
+        # so we can simply move ahead two steps counting from the first indexed to second index that is element 2 and now our other pointer can keep coming ahead as well till the previous pointer reaches the last element that means a total movement of +3 and thus our slow traveller will be at 3 and it's next element will be the one we need to delete and we can simply remove it . 
+        
+        # The whole problem (could be solved) basically uses the simple maths of how if we are given a  position of a person from the back row and we know the total then we can calculate the current position from front ( ex: 3rd last desk in a total desk of 10 in the row. so this means 10-3 = 7 ) 
+        # Or we can also understand this as when we are trying to meet up with our friend who is walking n-steps ahead will reach the end first and you will be n-steps away ( or behind from the end ) which in this case will be the nth-end to be deleted.         
+
+        # Using ListNode class which takes two arguments - value to be stored here and the next pointer to another node
+        dummy = ListNode(0, head)  # dummy node before head which will be the anchor for the original head node
+        
+        # Creating two more pointers initialized to the dummy node , which will move ahead at varying speeds                  
+        # but having the same start to make sure they remain consistent throughout the travel
+        slow = dummy
+        fast = dummy
+
+        # Step 1: Move fast n steps ahead
+        for _ in range(n): # here '_' is throwaway variable as we don't actually need this variable                
+            # so just making the smallest and simplest variable name as per the pythonic conventions
+            fast = fast.next
+
+        # Step 2: Move both until fast reaches the end
+        # Specifically focusing on fast only because it will be the first one to reach the end , if any, as it is moving faster
+        # And we can check for when fast will reach the end by checking if fast.next exists .
+        while fast.next:
+            fast = fast.next
+            slow = slow.next
+
+        # Step 3: Delete the node after slow
+        slow.next = slow.next.next
+
+        return dummy.next
+
+
+# Leetcode - 92. Reverse Linked List II
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
+        dummy = ListNode(0 , head) # To help us track of the head of the linked list
+
+        # Part - 1
+        # So now we have to reach left position given by the question to start reversing
+        #So let's create two variables as current - cur and a previous ..Though we will just see what we are gonna do with this
+
+        leftprev , curr = dummy , head
+        for _ in range( left - 1 ):
+            # here we are saying left - 1 as we want in this first part of our algorithm to make sure we reach the left position adn since our current is at head initailly thus this means position 1 and if as per the given position ( that is the left position of the first example i.e. 2) so we only want to move one time ( left - 1) only to reach the left position
+
+            leftprev , curr  = curr , curr.next
+
+        # as we can tell that after this first part our current will be at left position and previous will be at the position just previous to current such that previous.nect will be current .. so let's keep previous locked on in there as we don't wanna loose the anchor to the left position as later on it will help us in finsihing up the algorithm by rearranging the pointers of the sub list that we have just reversed .. so let's make it something else in the naming convention
+
+        # now comes the second fun part of the algorithm that is to reverse the sublist.. so let's do it with the help of our simple 3 pointers approach as we know it already and keeping one thing in mind that the initial left poistion's node should point at null position instead of pointing backwards ..
+
+        prev = None
+        for _ in range (right - left + 1):
+            # here the reason to move right - left + 1 is that we have right( here 4 ) - left ( here 2 ) = 2 but number of nodes are 1 greater thus the addtion of 1..
+
+            temp = curr.next # To keep our next node pointer save as otherwise we would not be able to move forward
+            curr.next = prev
+            prev , curr = curr , temp
+        
+
+        #Now we are done with our sub list being even rversed , but still one thing remains that is to make sure that pointers are pointing correctly as since we only make the initial left position's node to point towards null but it should be pointing towards the right position's node.next .. and if we just pay a little attention than we can tell that the curr should be at the right position's node.next as that is when our condition of for loop would have broken because only when the curr will be at that right position's node.next is when we have traversed through the rest of the nodes of the sublist ..and ofcourse prev will be just one step behind curr
+        # Thankfully since we have our anhor varibale leftprev locked in , we can just use it to now shuffle up the pointers in the valid way to finish up the process
+
+        leftprev.next.next = curr
+        leftprev.next = prev
+
+        # because in this example our leftprev would be 1 and prev would be 4 and curr would 5 so basically leftprev.next.next means we are talking about the pointer of 2 to point towards curr that is 5 (in this case) and leftprev.next to point towards at 4 that is the prev...
+
+        return dummy.next #  since we have this dummy to be pointing at the head of the linked list ..
+
+
+# Leetcode - 50. Pow(x,n)
+
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+
+        # Using recursion to break down the problem into sub-probelm
+        def cal_pow(x, n):
+            # Handling base cases
+            if x == 0:
+                return 0
+            if n == 0:
+                return 1
+            if n == 1 :
+                return x
+            
+            res = cal_pow(x, n // 2) # re-calling the function itself after int div of n by 2 and returning int value as new value of n
+            res = res * res
+
+            if n % 2 == 1:
+                return res * x
+            
+            return res
+
+        ans = cal_pow(x, abs(n))
+
+        if n >= 0:
+            return ans
+        
+        return 1 / ans 
+
+# Leetcode - 191. Number of 1 Bits
+
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        count = 0
+        while (n > 0):
+            if ((n & 1 ) == 1):
+                # doing bitwise 'and' with 1 on the bits to find whether the last bit is 1
+                count += 1
+            n >>= 1 # doing right shift to now focus on the next bit of the given no.
+        return count
+
+# Leetcode - 268. Missing Number
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        n = len(nums)
+        temp = 0 # to accumulate XOR results. And starting with 0 b/c that's the start in nums. which at the end will hold missing value .
+        
+        for i in range (1 , n + 1):
+            # here for loop starts with 1 because we already set the 0 in temp
+            # i ^ nums[i-1] to pair each expected no. with the actual no.
+            temp = ( i ^ nums[i - 1] ) ^ temp
+            # Then we XOR with the value of temp.
+        return temp
+
+        # XOR Operator '^' has 3 key properties that makes this possible here :
+        # 1). Self-canceling (Any number XORed with itself vanishes.) a^a = 0
+        # 2). Identity (XOR with zero leaves the number unchanged.) a^0 = a 
+        # 3). - Commutative & Associative(Order doesn’t matter) a^b^c = c^a^b
+
+        # Thus if we XOR all numbers from 1 to n with nums , every number that appears in both will be cancelled . Except that did not appear in nums and thus that will be the missing num.
+
