@@ -71,6 +71,21 @@ Output:
 +------------+----------+--------+
 Explanation: Max and Jim both have the highest salary in the IT department and Henry has the highest salary in the Sales department.
 
+# Write your MySQL query statement below
+Select
+      d.name As Department,
+      e.name As Employee,
+      e.salary As Salary
+From Employee As e
+Join Department As d
+On e.departmentId = d.id
+Where (e.departmentId , e.salary) In 
+(
+    -- This is the subquery to find the exact Max Salary per department thus using department id and salary from the Employee table as e
+    Select departmentId , Max(salary)
+    From Employee
+    Group By departmentId
+);
 
 
 
